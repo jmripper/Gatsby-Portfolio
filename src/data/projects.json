@@ -1,0 +1,61 @@
+[
+  {
+    "name": "National Parks Trivia",
+    "type": "front-end",
+    "technologies": "HTML, CSS, & Vanilla Javascript",
+    "overview": "An interactive trivia game on the national parks built where a player get scored on the number of questions they get right. Built using HTML, CSS, and Vanilla JS.",
+    "img": "NationalParksTrivia2019.png",
+    "repo_url": "https://github.com/jmripper/National_Parks_Trivia",
+    "deployed_url": "https://jmripper.github.io/National_Parks_Trivia/"
+  },
+  {
+    "name": "Tic-Tac-Toe",
+    "type": "front-end",
+    "description": "A user can play a game of Tic Tac Toe with the computer and choose whether they want to play as X or O. The game will reset as soon as it's over. Built using: Javascript, HTML, & CSS",
+    "img": "",
+    "repo_url": "",
+    "deployed_url": ""
+  },
+  {
+    "name": "",
+    "type": "front-end",
+    "description": "",
+    "img": "",
+    "url": ""
+  },
+  {
+    "name": "Wikipedia Viewer",
+    "type": "front-end",
+    "description": "Allows a user to search and view Wikipedia articles.Uses Wikpedia's API to retrieve the articles. Built using Vanilla JS, HTML, and CSS3.",
+    "img": "WikipediaViewer.png",
+    "url": "https://maribelduran.github.io/wikipedia-viewer"
+  },
+  {
+    "name": "Local Weather App",
+    "type": "front-end",
+    "description": "Shows the weather of the user's current location in both Fahrenheit and Celcius. Uses HTML5 Geolocation API to get the user's location and Dark Sky API for the weather conditions. Built using Javascript, jQuery, HTML5, CSS, and Bootstrap.",
+    "img": "SFWeatherSmall.png",
+    "url": "https://maribelduran.github.io/local-weather"
+  },
+  {
+    "name": "Inspirational Quotes Generator",
+    "type": "front-end",
+    "description": "Provides random inspirational quotes using Forismatic API. The user can share the quotes on Facebook and Twitter. Built using Javascript, JQuery, HTML, CSS3, and Bootstrap.",
+    "img": "RandomQuoteGenerator.png",
+    "url": "https://maribelduran.github.io/inspirational-quote-generator"
+  },
+  {
+    "name": "Image Search Abstraction Microservice",
+    "type": "back-end",
+    "description": "This service accepts a search string and will return a set of image results from a Google custom search engine. Built using, MongoDB, Node.js, and Express.",
+    "img": "ImageSearch.png",
+    "url": "https://img-search-layer-microsrvc.herokuapp.com"
+  },
+  {
+    "name": "Ask Me",
+    "type": "react",
+    "description": "Students are welcomed to ask me questions about programming, my career, or hobbies. They can submit their questions through the contact form or embedded Padlet board.",
+    "img": "AskMe.png",
+    "url": "https://maribelduran.github.io/ask-me/"
+  }
+]
