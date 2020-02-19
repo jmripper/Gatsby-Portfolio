@@ -9,7 +9,7 @@ const Section = styled.section`
   position: relative;
 `
 const Container = styled.div`
-  padding: 2.5rem 0;
+  padding: 2rem 0;
 
   h2 {
     font-family: "Raleway", sans-serif;
@@ -17,7 +17,7 @@ const Container = styled.div`
     margin: 0 auto 1em;
     text-align: center;
     font-size: 2.5rem;
-    line-height: 1.8em;
+    line-height: 1.3em;
   }
 `
 
@@ -36,7 +36,7 @@ const GridItem = styled.li`
   h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    margin: 0.75rem 0;
+    margin: 0.75rem;
     text-align: left;
     text-rendering: optimizeLegibility;
   }
@@ -46,6 +46,7 @@ const GridItem = styled.li`
     font-weight: 400;
     text-align: left;
     text-rendering: optimizeLegibility;
+    margin: 0.75rem;
   }
 `
 
@@ -68,14 +69,13 @@ const Projects = props => {
             </div>
             <h3>Trivia Game</h3>
             <p>
-              An interactive trivia game on the national parks built using HTML,
-              CSS, and Vanilla JS.
+            An interactive trivia game on the national parks built where a player get scored on the number of questions they get right. Built using HTML, CSS, and Vanilla JS..
             </p>
           </GridItem>
           <GridItem>
             <div>
               <ProjectImage
-                fluid={props.data.triviaImage.childImageSharp.fluid}
+                fluid={props.data.movieImage.childImageSharp.fluid}
               />
             </div>
             <h3>Trivia Game</h3>

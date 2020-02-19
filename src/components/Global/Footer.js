@@ -20,6 +20,7 @@ const Info = styled.div`
   p {
     font-size: 14px;
     margin: 0;
+    padding: 0;
     text-align: center;
     color: #131313;
     font-family: "Raleway", sans-serif;
