@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -29,10 +29,10 @@ const Nav = styled.nav`
 `
 
 const Name = styled.div`
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #131313;
   font-size: 26px;
-  line-height: 34px;
+  line-height: 30px;
   width: 300px;
   max-width: 300px;
   position: relative;
@@ -47,29 +47,6 @@ const Name = styled.div`
   }
 `
 
-const Toggle = styled.div`
-  position: absolute;
-  z-index: 999;
-  padding: 0;
-  top: 15px;
-  margin: 0;
-  transition: transform 0.3s;
-  right: 1em;
-  @media screen and (min-width: 800px) {
-    display: none;
-  }
-  div:first-child {
-    transform: rotate(${props => (props.open ? "45deg" : "0")});
-    top: ${props => (props.open ? "15px" : "23px")};
-  }
-  div:nth-child(2n) {
-    opacity: ${props => (props.open ? "0" : "1")};
-  }
-  div:nth-child(3n) {
-    transform: rotate(${props => (props.open ? "-45deg" : "0")});
-    bottom: ${props => (props.open ? "16px" : "23px")};
-  }
-`
 const Overlay = styled.div`
   background: #131313;
   height: 100%;
@@ -89,24 +66,42 @@ const Overlay = styled.div`
 
 const StyledBurger = styled.button`
   position: absolute;
+  z-index: 10;
+  width: 100%;
+  max-width: 2.5rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  right: 2rem;
+  top: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 3.5rem;
-  height: 2rem;
-  float: right;
   cursor: pointer;
   background: transparent;
   border: none;
+
   div {
-    transition: all 0.3s;
-    position: absolute;
-    display: block;
-    background: ${props => (props.open ? "white" : "#131313")};
-    width: 50%;
+    transition: all 0.3s linear;
+    position: relative;
+    background: ${props => (props.open ? "#131313" : "#131313")};
+    width: 2rem;
     height: 2px;
-    left: 30%;
+    transform-origin: 1px;
+  }
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+  div:first-child {
+    transform: ${props => (props.open ? "rotate(45deg)" : "rotate(0)")};
+  }
+  div:nth-child(2n) {
+    opacity: ${props => (props.open ? "0" : "1")};
+    transform: ${props => (props.open ? "translateX(20px)" : "translateX(0)")};
+  }
+  div:nth-child(3n) {
+    transform: ${props => (props.open ? "rotate(-45deg)" : "rotate(0)")};
   }
 `
 
@@ -168,7 +163,6 @@ const Item = styled.li`
 
 const NavBar = props => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isTop, setIsTop] = useState(true)
 
   function toggleMenu() {
     setIsOpen(!isOpen)
@@ -176,10 +170,6 @@ const NavBar = props => {
 
   function closeMenu() {
     setIsOpen(false)
-  }
-
-  function handleScroll() {
-    setIsTop(!window.pageYOffset)
   }
 
   function handleLinkClick() {
@@ -192,19 +182,21 @@ const NavBar = props => {
   // }, [])
 
   return (
-    <div className={isTop ? "top" : "scrolled"}>
+    <div>
       <Overlay open={isOpen} />
       <Nav open={isOpen} id="nav" role="navigation">
         <Name>
           <Link to="/">Jenny Lothstein</Link>
         </Name>
-        <Toggle open={isOpen} aria-label="Toggle Menu">
-          <StyledBurger onClick={toggleMenu}>
-            <div />
-            <div />
-            <div />
-          </StyledBurger>
-        </Toggle>
+        <StyledBurger
+          open={isOpen}
+          aria-label="Toggle Menu"
+          onClick={toggleMenu}
+        >
+          <div />
+          <div />
+          <div />
+        </StyledBurger>
         <List open={isOpen} {...props}>
           <Item>
             <Link to="/about" onClick={closeMenu} {...props}>
