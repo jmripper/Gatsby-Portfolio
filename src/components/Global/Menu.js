@@ -88,7 +88,7 @@ const Overlay = styled.div`
 `
 
 const StyledBurger = styled.button`
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
