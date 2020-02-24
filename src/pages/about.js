@@ -10,7 +10,7 @@ const AboutPage = props => {
   return (
     <>
       <Layout>
-        <SEO title="About Me" />
+        <SEO title="About" />
         <About data={props.data} />
         <Tech />
       </Layout>
