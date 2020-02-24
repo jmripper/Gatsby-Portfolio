@@ -7,6 +7,7 @@ const Section = styled.section`
   padding: 60px 0 40px;
   width: 100%;
   position: relative;
+  background: #eef3f6;
 `
 const Container = styled.div`
   padding: 2rem 0;
@@ -27,18 +28,24 @@ const GridList = styled.ul`
   grid-gap: 1.5rem;
   list-style: none;
   margin: 0 auto;
+  padding: 0 1.5rem;
   max-width: 1250px;
 `
 
 const GridItem = styled.li`
   margin: 0 0 1.5em;
+  border: thin solid rgba(51, 183, 176, 0.1);
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  overflow: hidden;
 
   h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    margin: 0.75rem;
+    margin: 1rem;
     text-align: left;
     text-rendering: optimizeLegibility;
+    text-decoration: underline;
   }
 
   p {
@@ -46,13 +53,17 @@ const GridItem = styled.li`
     font-weight: 400;
     text-align: left;
     text-rendering: optimizeLegibility;
-    margin: 0.75rem;
+    margin: 1rem;
   }
 `
 
 const ProjectImage = styled(Img)`
   height: 100%;
+  top: -8px;
   position: relative;
+  transform: skewY(-2.2deg);
+    transition: all 0.5s ease-in-out 0s;
+  
 `
 
 const Projects = props => {
@@ -78,10 +89,9 @@ const Projects = props => {
                 fluid={props.data.movieImage.childImageSharp.fluid}
               />
             </div>
-            <h3>Trivia Game</h3>
+            <h3>jMDb</h3>
             <p>
-              An interactive trivia game on the national parks built using HTML,
-              CSS, and Vanilla JS.
+              jMDb is a full-stack MERN application where one can view, add, update, and delete a movie. Built using MongoDB, Express, Mongoose, Node, HTML, CSS, and React.
             </p>
           </GridItem>
           <GridItem>
@@ -90,7 +100,7 @@ const Projects = props => {
                 fluid={props.data.triviaImage.childImageSharp.fluid}
               />
             </div>
-            <h3>Trivia Game</h3>
+            <h3>Tic-Tac-Toe</h3>
             <p>
               An interactive trivia game on the national parks built using HTML,
               CSS, and Vanilla JS.

@@ -12,7 +12,6 @@ const ProjectsPage = props => {
       <Layout>
         <SEO title="Projects" />
         <Projects data={props.data} />
-        <Link to="/page-2/">Go to page 2</Link>
       </Layout>
     </>
   )
