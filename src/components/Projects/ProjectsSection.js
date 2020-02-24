@@ -38,6 +38,7 @@ const GridItem = styled.li`
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   overflow: hidden;
+  position: relative;
 
   h3 {
     font-family: "Raleway", sans-serif;
@@ -62,7 +63,13 @@ const ProjectImage = styled(Img)`
   top: -8px;
   position: relative;
   transform: skewY(-2.2deg);
-    transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  object-fit: cover;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
   
 `
 

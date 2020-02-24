@@ -28,7 +28,7 @@ export const ProjectsPageImageQuery = graphql`
         }
       }
     }
-    movieImage: file(relativePath: {eq: "projects/jmdb.png"}) {
+    movieImage: file(relativePath: {eq: "projects/jmbd.png"}) {
       childImageSharp {
         fluid(maxWidth: 450, quality: 90, maxHeight: 350) {
           ...GatsbyImageSharpFluid
