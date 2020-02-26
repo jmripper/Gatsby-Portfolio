@@ -93,7 +93,7 @@ const HeaderImage = props => {
       />
       <Box>
         <Container>
-          <Title>Hi, I'm Jenny</Title>
+          <Title>Aloha, I'm Jenny</Title>
           <SubTitle>I'm a digital marketer turned developer.</SubTitle>
         </Container>
       </Box>
