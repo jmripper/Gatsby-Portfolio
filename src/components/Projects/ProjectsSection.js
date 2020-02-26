@@ -28,15 +28,18 @@ const GridList = styled.ul`
   grid-gap: 1.5rem;
   list-style: none;
   margin: 0 auto;
-  padding: 0 1.5rem;
   max-width: 1250px;
+  @media (min-width:380px) {
+    padding: 0 1.5rem;
+  }
 `
 
 const GridItem = styled.li`
   margin: 0 0 1.5em;
   border: thin solid rgba(51, 183, 176, 0.1);
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   overflow: hidden;
   position: relative;
 
@@ -70,7 +73,6 @@ const ProjectImage = styled(Img)`
     transform: scale(1.1);
     cursor: pointer;
   }
-  
 `
 
 const Projects = props => {
@@ -87,7 +89,9 @@ const Projects = props => {
             </div>
             <h3>Trivia Game</h3>
             <p>
-            An interactive trivia game on the national parks built where a player get scored on the number of questions they get right. Built using HTML, CSS, and Vanilla JS..
+              An interactive trivia game on the national parks built where a
+              player get scored on the number of questions they get right. Built
+              using HTML, CSS, and Vanilla JS..
             </p>
           </GridItem>
           <GridItem>
@@ -98,7 +102,9 @@ const Projects = props => {
             </div>
             <h3>jMDb</h3>
             <p>
-              jMDb is a full-stack MERN application where one can view, add, update, and delete a movie. Built using MongoDB, Express, Mongoose, Node, HTML, CSS, and React.
+              jMDb is a full-stack MERN application where one can view, add,
+              update, and delete a movie. Built using MongoDB, Express,
+              Mongoose, Node, HTML, CSS, and React.
             </p>
           </GridItem>
           <GridItem>
@@ -109,8 +115,10 @@ const Projects = props => {
             </div>
             <h3>Tic-Tac-Toe</h3>
             <p>
-              An interactive trivia game on the national parks built using HTML,
-              CSS, and Vanilla JS.
+              A user can play a game of Tic Tac Toe with the computer and choose
+              whether they want to play as X or O. The game will reset once the
+              reset button is clicked. Built using: Vanilla Javascript, HTML, &
+              CSS.
             </p>
           </GridItem>
           <GridItem>

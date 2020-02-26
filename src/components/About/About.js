@@ -12,6 +12,10 @@ const Section = styled.section`
     font-weight: 400;
     margin: 1em auto;
   }
+  p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
 `
 
 const Subheading = styled.h3`
@@ -40,10 +44,10 @@ const List = styled.ul`
     font-size: 18px;
     vertical-align: center;
     display: flex;
-  flex-flow: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 `
 
@@ -51,13 +55,14 @@ const About = props => {
   return (
     <Section>
       <h2>About Me</h2>
+      <p>Blah blah this is about me</p>
       <Subheading>When I'm Not Coding, You Can Find Me</Subheading>
       <List>
-          <li>Hanging with husband (married Feb. 2020) and out dog Maple</li>
-          <li><Icon fluid={props.data.travelIcon.childImageSharp.fluid} /> &nbsp;Traveling - Most recently to Brazil in Sept. 2019</li>
-          <li>Hiking around the DMV</li>
-          <li>Watching Ohio State football. O-H!</li>
-          <li>Working on DIY projects</li>
+        <li>Hanging with husband (married Feb. 2020) and our dog Maple</li>
+        <li>Traveling - Most recently to Brazil in Sept. 2019</li>
+        <li>Hiking around the DMV</li>
+        <li>Watching Ohio State football. O-H!</li>
+        <li>Working on DIY projects</li>
       </List>
     </Section>
   )

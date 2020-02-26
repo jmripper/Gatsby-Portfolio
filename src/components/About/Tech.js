@@ -12,6 +12,10 @@ const Section = styled.section`
     font-weight: 400;
     margin: 1em auto;
   }
+  p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+  }
 `
 
 const Tech = props => {

@@ -98,7 +98,7 @@ const StyledBurger = styled.button`
   }
   div:nth-child(2n) {
     opacity: ${props => (props.open ? "0" : "1")};
-    transform: ${props => (props.open ? "translateX(20px)" : "translateX(0)")};
+    /* transform: ${props => (props.open ? "translateX(20px)" : "translateX(0)")}; */
   }
   div:nth-child(3n) {
     transform: ${props => (props.open ? "rotate(-45deg)" : "rotate(0)")};
