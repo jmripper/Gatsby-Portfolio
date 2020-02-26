@@ -25,7 +25,7 @@ const Nav = styled.nav`
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
   }
 `
 
