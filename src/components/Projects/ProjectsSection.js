@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
 
 const Section = styled.section`
   padding: 60px 0 40px;

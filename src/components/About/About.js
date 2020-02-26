@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Img from "gatsby-image"
 
 const Section = styled.section`
   text-align: center;
@@ -21,13 +20,6 @@ const Section = styled.section`
 const Subheading = styled.h3`
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-`
-
-const Icon = styled(Img)`
-  position: relative;
-  width: 30px;
-  height: auto;
-  display: inline-block;
 `
 
 const List = styled.ul`

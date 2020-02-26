@@ -172,9 +172,9 @@ const NavBar = props => {
     setIsOpen(false)
   }
 
-  function handleLinkClick() {
-    setIsOpen(false)
-  }
+  // function handleLinkClick() {
+  //   setIsOpen(false)
+  // }
 
   // useEffect(() => {
   //   window.addEventListener("scroll", handleScroll)
