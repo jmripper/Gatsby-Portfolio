@@ -36,11 +36,11 @@ const Name = styled.div`
   line-height: 30px;
   width: 300px;
   max-width: 300px;
-  /* position: relative; */
-  /* top: 15px;
+  position: relative;
+  top: 15px;
   right: 0;
   bottom: 10px;
-  left: 0; */
+  left: 0;
 
   a {
     text-decoration: none;
