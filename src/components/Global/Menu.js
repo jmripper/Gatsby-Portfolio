@@ -5,7 +5,7 @@ import styled from "styled-components"
 const Nav = styled.nav`
   transition: max-height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1),
     background 0.3s, border 0.3s;
-  padding: 0 2em;
+  padding: 0;
   background-color: #ffffff;
   position: fixed;
   font-family: "Raleway", sans-serif;
