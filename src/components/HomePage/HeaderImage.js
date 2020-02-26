@@ -42,11 +42,10 @@ const Box = styled.div`
   padding: 0 2rem;
   z-index: 5;
   height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+  outline: 1px solid blue;
+  position: absolute;
+  
 `
 
 const Container = styled.div`
@@ -61,7 +60,7 @@ const Container = styled.div`
 const Title = styled.h2`
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  color: white;
+  color: #000000;
   z-index: 5;
   font-size: 4em;
   @media screen and (min-width: 800px) {
@@ -71,7 +70,7 @@ const Title = styled.h2`
 const SubTitle = styled.h3`
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  color: white;
+  color: #000000;
   z-index: 5;
   padding: 0 0 1rem 0;
   font-size: 1.2em;
