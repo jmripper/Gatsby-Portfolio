@@ -75,12 +75,12 @@ const SubTitle = styled.h3`
   font-size: 1.2em;
   line-height: 1.3;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   width: auto;
   @media screen and (min-width: 800px) {
     font-size: 1.5em;
     padding: 0;
-    width: 80%;
+    width: 100%;
   }
 `
 
