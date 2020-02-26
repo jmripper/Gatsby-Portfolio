@@ -1,6 +1,6 @@
-import React from "react";
-import Img from "gatsby-image";
-import styled from "styled-components";
+import React from "react"
+import Img from "gatsby-image"
+import styled from "styled-components"
 
 const Wrapper = styled.div`
   width: 100%;
@@ -39,11 +39,11 @@ const CoverImg = styled(Img)`
 
 const Box = styled.div`
   text-align: center;
-  padding: 0 2rem;
+  padding: 60px 1.5rem 0;
   z-index: 5;
   height: 100%;
-  width: 80%;
-  position: absolute;
+  width: 100%;
+  position: relative;
   margin: 0 auto;
 `
 
@@ -54,6 +54,8 @@ const Container = styled.div`
   text-align: center;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 `
 
 const Title = styled.h2`
@@ -61,7 +63,8 @@ const Title = styled.h2`
   font-weight: 500;
   color: #ffffff;
   z-index: 5;
-  font-size: 4em;
+  font-size: 3.2em;
+  margin: 0;
   @media screen and (min-width: 800px) {
     font-size: 5.5em;
   }
@@ -71,7 +74,8 @@ const SubTitle = styled.h3`
   font-weight: 400;
   color: #ffffff;
   z-index: 5;
-  padding: 0 0 1rem 0;
+  padding: 0;
+  margin: 1rem auto;
   font-size: 1.2em;
   line-height: 1.3;
   display: inline-block;
