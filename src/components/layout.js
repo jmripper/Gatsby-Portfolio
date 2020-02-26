@@ -13,8 +13,8 @@ import styles from "../styles/styles"
 
 import NavBar from "./Global/Menu"
 import Footer from "../components/Global/Footer"
-import "./layout.css"
 import "../styles/normalize.css"
+import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
