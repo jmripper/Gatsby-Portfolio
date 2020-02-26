@@ -25,6 +25,7 @@ const Nav = styled.nav`
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
+    align-items: center;
   }
 `
 
@@ -35,7 +36,7 @@ const Name = styled.div`
   line-height: 30px;
   width: 300px;
   max-width: 300px;
-  position: relative;
+  /* position: relative; */
   /* top: 15px;
   right: 0;
   bottom: 10px;
