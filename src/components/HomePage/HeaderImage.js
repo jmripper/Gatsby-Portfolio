@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 
 const CoverImg = styled(Img)`
-  position: absolute;
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100%;
