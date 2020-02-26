@@ -82,6 +82,7 @@ const StyledBurger = styled.button`
   cursor: pointer;
   background: transparent;
   border: none;
+  outline: none;
 
   div {
     transition: all 0.3s linear;

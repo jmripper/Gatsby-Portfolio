@@ -40,7 +40,7 @@ const CoverImg = styled(Img)`
 const Box = styled.div`
   text-align: center;
   padding: 0 2rem;
-  z-index: 2;
+  z-index: 5;
   height: 100%;
   width: 100%;
   display: flex;
@@ -62,6 +62,7 @@ const Title = styled.h2`
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   color: white;
+  z-index: 5;
   font-size: 4em;
   @media screen and (min-width: 800px) {
     font-size: 5.5em;
@@ -71,6 +72,7 @@ const SubTitle = styled.h3`
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: white;
+  z-index: 5;
   padding: 0 0 1rem 0;
   font-size: 1.2em;
   line-height: 1.3;
@@ -91,12 +93,12 @@ const HeaderImage = props => {
         fluid={props.data.coverImg.childImageSharp.fluid}
         backgroundColor={"#f7f7f7"}
       />
-      {/* <Box>
+      <Box>
         <Container>
           <Title>Aloha, I'm Jenny</Title>
           <SubTitle>I'm a digital marketer turned developer.</SubTitle>
         </Container>
-      </Box> */}
+      </Box>
     </Wrapper>
   )
 }
