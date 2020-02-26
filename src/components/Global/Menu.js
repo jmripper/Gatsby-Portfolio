@@ -182,7 +182,7 @@ const NavBar = props => {
   // }, [])
 
   return (
-    <div>
+    <>
       <Overlay open={isOpen} />
       <Nav open={isOpen} id="nav" role="navigation">
         <Name>
@@ -220,7 +220,7 @@ const NavBar = props => {
           </Item>
         </List>
       </Nav>
-    </div>
+    </>
   )
 }
 

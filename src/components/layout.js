@@ -6,7 +6,7 @@ import styles from "../styles/styles"
 
 import NavBar from "./Global/Menu"
 import Footer from "../components/Global/Footer"
-import "../styles/normalize.css"
+// import "../styles/normalize.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
