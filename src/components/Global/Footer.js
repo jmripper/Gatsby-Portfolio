@@ -33,7 +33,7 @@ const Footer = props => {
     <Wrapper>
       <Info>
         <p>
-          Copyright &copy; {new Date().getFullYear()} — Jenny Lothstein | All
+          Copyright &copy; {new Date().getFullYear()} — Jenny Ripper | All
           rights reserved.
         </p>
       </Info>

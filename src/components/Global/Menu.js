@@ -186,7 +186,7 @@ const NavBar = props => {
       <Overlay open={isOpen} />
       <Nav open={isOpen} id="nav" role="navigation">
         <Name>
-          <Link to="/">Jenny Lothstein</Link>
+          <Link to="/">Jenny Ripper</Link>
         </Name>
         <StyledBurger
           open={isOpen}
