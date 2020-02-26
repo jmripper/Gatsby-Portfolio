@@ -91,12 +91,12 @@ const HeaderImage = props => {
         fluid={props.data.coverImg.childImageSharp.fluid}
         backgroundColor={"#f7f7f7"}
       />
-      <Box>
+      {/* <Box>
         <Container>
           <Title>Aloha, I'm Jenny</Title>
           <SubTitle>I'm a digital marketer turned developer.</SubTitle>
         </Container>
-      </Box>
+      </Box> */}
     </Wrapper>
   )
 }

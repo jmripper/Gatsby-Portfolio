@@ -16,7 +16,7 @@ const Nav = styled.nav`
   left: 0;
   width: 100%;
   z-index: 99;
-  overflow-y: hidden;
+  overflow: hidden;
   overscroll-behavior: contain;
   max-height: ${props => (props.open ? "100%" : "60px")};
   @media screen and (min-width: 800px) {
