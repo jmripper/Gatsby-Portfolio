@@ -14,7 +14,13 @@ const Section = styled.section`
   }
   p {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    margin: .5em 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  span {
+    font-weight: 500;
   }
 `
 
@@ -22,9 +28,9 @@ const Tech = props => {
   return (
     <Section>
       <h2>Tech Stack</h2>
-      <p>Editor: VS Code</p>
-      <p>Front-End: HTML, CSS, React, JS ES6</p>
-      <p>Backend: MySQL, MongoDB, Node.js, Python</p>
+      <p><span>Editor:</span> VS Code</p>
+      <p><span>Front-End:</span> HTML, CSS, React, JS ES6, RESTful APIs, GraphQL</p>
+      <p><span>Backend:</span> MySQL, MongoDB, Node.js, Python, Django, Express, Mongoose, PostgreSQL</p>
     </Section>
   )
 }

@@ -14,7 +14,7 @@ const Section = styled.section`
   }
   p {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
   }
 `
 
@@ -43,6 +43,7 @@ const List = styled.ul`
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: .5em 0;
   }
 `
 
@@ -50,7 +51,12 @@ const About = props => {
   return (
     <Section>
       <h2>About Me</h2>
-      <p>Blah blah this is about me</p>
+      <p>
+        I'm a former digital marketer turned full-stack web developer, driven to
+        create high-quality products with intuitive creative design and
+        functionality. A team player who can quickly adapt, I have an analytical
+        mind and am self-motivated to discover new innovative solutions.
+      </p>
       <Subheading>When I'm Not Coding, You Can Find Me</Subheading>
       <List>
         <li>Hanging with husband (married Feb. 2020) and our dog Maple</li>
