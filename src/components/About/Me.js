@@ -17,6 +17,7 @@ const Section = styled.section`
   p {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
+    line-height: 22px;
   }
 `
 
