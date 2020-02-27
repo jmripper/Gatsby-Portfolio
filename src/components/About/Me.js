@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Img from "gatsby-image"
 
 const Section = styled.section`
   background: #eef3f6;
@@ -29,11 +30,24 @@ const Subheading = styled.h3`
   font-weight: 400;
 `
 
+const HeadShot = styled(Img)`
+  border-radius: 50%;
+`
+
 const Me = props => {
   return (
     <Section>
       <h2>About Me</h2>
-      <Subheading>Hey Again, I'm Jenny <span role="image" aria-label="hand waving emoji">👋</span></Subheading>
+      <HeadShot
+        fluid={props.data.headShot.childImageSharp.fluid}
+        role="image"
+      />
+      <Subheading>
+        Hey Again, I'm Jenny{" "}
+        <span role="image" aria-label="hand waving emoji">
+          👋
+        </span>
+      </Subheading>
       <p>
         I'm a former digital marketer turned full-stack web developer, driven to
         create high-quality products with intuitive creative design and
