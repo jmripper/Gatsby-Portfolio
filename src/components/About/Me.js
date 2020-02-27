@@ -18,6 +18,8 @@ const Section = styled.section`
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     line-height: 22px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 `
 
@@ -30,7 +32,7 @@ const Me = props => {
   return (
     <Section>
       <h2>About Me</h2>
-      <Subheading>Hey Again, Jenny Here</Subheading>
+      <Subheading>Hey Again, I'm Jenny <span role="image" aria-label="hand waving emoji">👋</span></Subheading>
       <p>
         I'm a former digital marketer turned full-stack web developer, driven to
         create high-quality products with intuitive creative design and

@@ -99,7 +99,7 @@ const HeaderImage = props => {
       />
       <Box>
         <Container>
-          <Title>Aloha, I'm Jenny <span role="image" aria-label="hand waving emoji">👋</span></Title>
+          <Title>Aloha, I'm Jenny</Title>
           <SubTitle>I'm a digital marketer turned developer.</SubTitle>
         </Container>
       </Box>

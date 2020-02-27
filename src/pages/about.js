@@ -12,7 +12,7 @@ const AboutPage = props => {
     <>
       <Layout>
         <SEO title="About" />
-        <Me />
+        <Me data={props.data} />
         <About data={props.data} />
         <Tech />
       </Layout>
