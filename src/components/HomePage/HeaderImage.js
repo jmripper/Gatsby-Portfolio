@@ -94,10 +94,12 @@ const HeaderImage = props => {
       <CoverImg
         fluid={props.data.coverImg.childImageSharp.fluid}
         backgroundColor={"#f7f7f7"}
+        role="image"
+        aria-label="death valley - cover image"
       />
       <Box>
         <Container>
-          <Title>Aloha, I'm Jenny</Title>
+          <Title>Aloha, I'm Jenny <span role="image" aria-label="hand waving emoji">👋</span></Title>
           <SubTitle>I'm a digital marketer turned developer.</SubTitle>
         </Container>
       </Box>

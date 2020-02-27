@@ -24,7 +24,7 @@ export default AboutPage;
 
 export const AboutPageImageQuery = graphql`
   query {
-    travelIcon: file(relativePath: {eq: "airplane.png"}) {
+    headShot: file(relativePath: {eq: "HeadShot.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 100, quality: 90) {
           ...GatsbyImageSharpFluid
