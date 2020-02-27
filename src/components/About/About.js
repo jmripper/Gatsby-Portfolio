@@ -10,6 +10,7 @@ const Section = styled.section`
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     margin: 1em auto;
+    text-align: center;
   }
   p {
     font-family: "Raleway", sans-serif;
@@ -30,10 +31,12 @@ const List = styled.ul`
   justify-content: center;
   width: 100%;
   margin: 0;
+  padding: 0;
   li {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
+    line-height: 22px;
     vertical-align: center;
     display: flex;
     flex-flow: wrap;
