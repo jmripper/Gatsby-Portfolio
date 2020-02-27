@@ -20,6 +20,7 @@ const Section = styled.section`
     line-height: 22px;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 18px;
   }
 `
 
