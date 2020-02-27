@@ -15,7 +15,7 @@ const Section = styled.section`
   p {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
-    margin: .5em 0;
+    margin: 0.5em 0;
     font-size: 18px;
     line-height: 22px;
   }
@@ -28,11 +28,18 @@ const Tech = props => {
   return (
     <Section>
       <h2>Tech Stack</h2>
-      <p><span>Editor:</span> VS Code</p>
-      <p><span>Front-End:</span> HTML, CSS, React, JS ES6, RESTful APIs, GraphQL</p>
-      <p><span>Backend:</span> MySQL, MongoDB, Node.js, Python, Django, Express, Mongoose, PostgreSQL</p>
+      <p>
+        <span>Editor:</span> VS Code
+      </p>
+      <p>
+        <span>Front-End:</span> HTML, CSS, React, JS ES6, RESTful APIs, GraphQL
+      </p>
+      <p>
+        <span>Backend:</span> MySQL, MongoDB, Node.js, Python, Django, Express,
+        Mongoose, PostgreSQL
+      </p>
     </Section>
   )
 }
 
-export default Tech;
+export default Tech

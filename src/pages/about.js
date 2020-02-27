@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Me from "../components/About/Me"
 import About from "../components/About/About"
 import Tech from "../components/About/Tech"
 
@@ -11,6 +12,7 @@ const AboutPage = props => {
     <>
       <Layout>
         <SEO title="About" />
+        <Me />
         <About data={props.data} />
         <Tech />
       </Layout>

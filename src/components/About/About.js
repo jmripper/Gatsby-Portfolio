@@ -3,19 +3,10 @@ import styled from "styled-components"
 
 const Section = styled.section`
   text-align: center;
-  padding: 70px 20px 30px;
+  background-color: #ffffff;
+  padding: 30px 20px;
   width: 100%;
   position: relative;
-  h2 {
-    font-family: "Raleway", sans-serif;
-    font-weight: 400;
-    margin: 1em auto;
-    text-align: center;
-  }
-  p {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-  }
 `
 
 const Subheading = styled.h3`
@@ -50,13 +41,6 @@ const List = styled.ul`
 const About = props => {
   return (
     <Section>
-      <h2>About Me</h2>
-      <p>
-        I'm a former digital marketer turned full-stack web developer, driven to
-        create high-quality products with intuitive creative design and
-        functionality. A team player who can quickly adapt, I have an analytical
-        mind and am self-motivated to discover new innovative solutions.
-      </p>
       <Subheading>When I'm Not Coding, You Can Find Me</Subheading>
       <List>
         <li>Hanging with husband (married Feb. 2020) and our dog Maple</li>
