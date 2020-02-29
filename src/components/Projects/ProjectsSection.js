@@ -85,6 +85,7 @@ const Projects = props => {
             <div>
               <ProjectImage
                 fluid={props.data.triviaImage.childImageSharp.fluid}
+                alt="National Parks Trivia Game"
               />
             </div>
             <h3>Trivia Game</h3>
@@ -98,6 +99,7 @@ const Projects = props => {
             <div>
               <ProjectImage
                 fluid={props.data.movieImage.childImageSharp.fluid}
+                alt="jMdB Screenshot"
               />
             </div>
             <h3>jMDb</h3>
@@ -111,15 +113,12 @@ const Projects = props => {
             <div>
               <ProjectImage
                 fluid={props.data.tictactoeImage.childImageSharp.fluid}
-                alt={props.data.tictactoeImage.alt}
+                alt="Tic-Tac-Toe Game"
               />
             </div>
             <h3>Tic-Tac-Toe</h3>
             <p>
-              A user can play a game of Tic Tac Toe with the computer and choose
-              whether they want to play as X or O. The game will reset once the
-              reset button is clicked. Built using: Vanilla Javascript, HTML, &
-              CSS.
+              A user can play a game of Tic Tac Toe with the computer. The game will reset once the reset button is clicked. Built using: Vanilla Javascript, HTML, & CSS.
             </p>
           </GridItem>
           <GridItem>
