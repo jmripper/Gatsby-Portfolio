@@ -15,7 +15,7 @@ const Section = styled.section`
     text-align: center;
   }
 `
-const Resume = styled.div`
+const ResumeContainer = styled.div`
   display: flex;
   flex-flow: column;
 `
@@ -26,7 +26,7 @@ const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
-      <Resume>
+      <ResumeContainer>
         Jennifer Ripper Full-Stack Engineer
         <hr />
         Full-stack engineer, driven to create high-quality products with
@@ -55,7 +55,7 @@ const Resume = props => {
         to query email segments of 3 million plus subscribers. Worked with
         developers to create new landing pages to improve mobile usability and
         implement SEO features to increase organic search rankings.
-      </Resume>
+      </ResumeContainer>
     </Section>
   )
 }
