@@ -14,6 +14,12 @@ const Section = styled.section`
     color: #000000;
     text-align: center;
   }
+
+  hr {
+      height: 1px;
+      background-color: #f4f4f4;
+      width: 100%;
+  }
 `
 const ResumeContainer = styled.div`
   display: flex;
@@ -25,10 +31,13 @@ const Name = styled.h4`
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  display: block;
+  margin: 0;
+  padding: 0;
 
-  span {
+  div {
     font-size: 16px;
+    line-height: 22px;
+    display: block;
   }
 `
 
