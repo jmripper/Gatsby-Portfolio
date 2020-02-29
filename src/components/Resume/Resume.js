@@ -18,6 +18,18 @@ const Section = styled.section`
 const ResumeContainer = styled.div`
   display: flex;
   flex-flow: column;
+  font-family: "Raleway", sans-serif;
+`
+
+const Name = styled.h4`
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  display: block;
+
+  span {
+    font-size: 16px;
+  }
 `
 
 const Skills = styled.div``
@@ -27,7 +39,10 @@ const Resume = props => {
     <Section>
       <h3>Resume:</h3>
       <ResumeContainer>
-        Jennifer Ripper Full-Stack Engineer
+        <Name>
+          Jennifer Ripper
+          <span>Full-Stack Engineer</span>
+        </Name>
         <hr />
         Full-stack engineer, driven to create high-quality products with
         intuitive creative design and functionality. A team player who can
