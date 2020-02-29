@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Img from "gatsby-image";
+import Img from "gatsby-image"
 
 const Section = styled.section`
   padding: 60px 0 40px;
@@ -29,7 +29,7 @@ const GridList = styled.ul`
   margin: 0 auto;
   padding: 0;
   max-width: 1250px;
-  @media (min-width:380px) {
+  @media (min-width: 380px) {
     padding: 0 1.5rem;
   }
 `
@@ -110,7 +110,8 @@ const Projects = props => {
           <GridItem>
             <div>
               <ProjectImage
-                fluid={props.data.triviaImage.childImageSharp.fluid}
+                fluid={props.data.tictactoeImage.childImageSharp.fluid}
+                alt={props.data.tictactoeImage.alt}
               />
             </div>
             <h3>Tic-Tac-Toe</h3>
