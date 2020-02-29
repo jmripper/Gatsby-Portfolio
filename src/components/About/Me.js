@@ -32,6 +32,9 @@ const Subheading = styled.h3`
 
 const HeadShot = styled(Img)`
   border-radius: 50%;
+  height: 280px;
+  width: 280px;
+  margin: 0 auto;
 `
 
 const Me = props => {

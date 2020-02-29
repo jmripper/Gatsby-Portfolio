@@ -127,7 +127,7 @@ const Projects = props => {
                 fluid={props.data.triviaImage.childImageSharp.fluid}
               />
             </div>
-            <h3>Trivia Game</h3>
+            <h3>Modern T</h3>
             <p>
               An interactive trivia game on the national parks built using HTML,
               CSS, and Vanilla JS.
@@ -139,7 +139,7 @@ const Projects = props => {
                 fluid={props.data.triviaImage.childImageSharp.fluid}
               />
             </div>
-            <h3>Trivia Game</h3>
+            <h3>Portfolio</h3>
             <p>
               An interactive trivia game on the national parks built using HTML,
               CSS, and Vanilla JS.

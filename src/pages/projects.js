@@ -35,6 +35,13 @@ export const ProjectsPageImageQuery = graphql`
         }
       }
     }
+    tictactoeImage: file(relativePath: {eq: "projects/Tic-Tac-Toe.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 450, quality: 90, maxHeight: 350) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 
