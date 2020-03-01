@@ -16,8 +16,8 @@ const Section = styled.section`
   }
 
   hr {
-    height: 1px;
-    border: 4px #f4f4f4 solid;
+    height: 10px;
+    background: #f4f4f4;
     width: 100%;
   }
 `
@@ -27,14 +27,15 @@ const ResumeContainer = styled.div`
   font-family: "Raleway", sans-serif;
 `
 
-const Name = styled.h4`
+const Name = styled.h2`
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 2rem;
+  color: #000000;
   margin: 0;
   padding: 0;
 
-  div {
+  span {
     font-size: 16px;
     line-height: 22px;
     display: block;
@@ -46,6 +47,16 @@ const Bio = styled.p`
   font-family: 16px;
   line-height: 22px;
   text-align: center;
+  font-weight: 300;
+  color: #000000;
+`
+const Experience = styled.div`
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+
+  ul {
+    margin: 0;
+  }
 `
 
 const Skills = styled.div``
@@ -57,7 +68,7 @@ const Resume = props => {
       <ResumeContainer>
         <Name>
           Jennifer Ripper
-          <div>Full-Stack Engineer</div>
+          <span>Full-Stack Engineer</span>
         </Name>
         <hr />
         <Bio>
@@ -66,10 +77,17 @@ const Resume = props => {
           quickly adapt, with an analytical mind and is self-motivated to
           discover new innovative solutions.
         </Bio>
-        Experience: Software Engineering Immersive General Assembly | Washington
-        D.C Nov. 2019 to Feb. 2020 Completed 500+ hour full-time immersive
-        Software Engineering program that included object-oriented programming,
-        MVC frameworks, data modeling, and test-driven applications.
+        <Experience>
+          Experience: Software Engineering Immersive General Assembly |
+          Washington D.C Nov. 2019 to Feb. 2020
+          <ul>
+            <li>
+              Completed 500+ hour full-time immersive Software Engineering
+              program that included object-oriented programming, MVC frameworks,
+              data modeling, and test-driven applications.
+            </li>
+          </ul>
+        </Experience>
         <br />
         Digital Marketing Manager EVERFI | Washington D.C Apr. 2019 to Oct. 2019
         Setup and managed 8 Facebook and Adwords campaigns and diagnosed all
