@@ -70,19 +70,6 @@ const Experience = styled.div`
     margin: 0;
     padding: 0;
   }
-
-  ul {
-    margin: 0;
-  }
-  li {
-    text-align: left;
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-    font-weight: 300;
-    text-decoration: none;
-  }
 `
 const Title = styled.p`
   font-weight: 400;
@@ -116,8 +103,9 @@ const SubTitle = styled.p`
 
 const ExperienceList = styled.ul`
   margin: 0;
+  font-family: "Raleway", sans-serif;
 
-li {
+  li {
     text-align: left;
     font-family: inherit;
     font-size: 16px;
@@ -125,10 +113,33 @@ li {
     color: #000000;
     font-weight: 300;
     text-decoration: none;
-}
+    padding-bottom: 5px;
+  }
 `
 
-const Skills = styled.div``
+const Skills = styled.div`
+  display: flex;
+  flex-flow: column;
+`
+
+const SkillsList = styled.ul`
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  list-style: none;
+
+  li {
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
+    padding-bottom: 5px;
+  }
+`
+
+const Education = styled.div``
 
 const Resume = props => {
   return (
@@ -146,6 +157,46 @@ const Resume = props => {
           quickly adapt, with an analytical mind and is self-motivated to
           discover new innovative solutions.
         </Bio>
+        <Skills>
+          <h4>SKILLS</h4>
+          <SkillsList>
+            <li>Languages</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Python</li>
+          </SkillsList>
+          <SkillsList>
+            <li>React</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>SEO</li>
+            <li>JSON</li>
+            <li>Git</li>
+            <li>Gatsby</li>
+            <li>GraphQL</li>
+          </SkillsList>
+          <SkillsList>
+            <li>Databases</li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>PostgreSQL</li>
+          </SkillsList>
+          <SkillsList>
+            <li>Design</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Adobe XD</li>
+            <li>Dreamweaver</li>
+          </SkillsList>
+          <SkillsList>
+            <li>Data Analysis</li>
+            <li>Google Analytics</li>
+            <li>Google Tag Manager</li>
+            <li>Tableau</li>
+          </SkillsList>
+        </Skills>
         <Experience>
           <h4>EXPERIENCE:</h4>
           <Title>Software Engineering Immersive</Title>
@@ -217,6 +268,12 @@ const Resume = props => {
             </li>
           </ExperienceList>
         </Experience>
+        <Education>
+          Software Engineering Immersive General Assembly Washington D.C. Nov.
+          2019 to Feb. 2020
+          Bachelor of Arts Ohio Wesleyan University Delaware, Ohio Aug. 2010 to
+          May 2014
+        </Education>
       </ResumeContainer>
     </Section>
   )
