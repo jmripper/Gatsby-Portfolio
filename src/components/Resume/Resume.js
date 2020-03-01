@@ -59,7 +59,7 @@ const Experience = styled.div`
   span {
     font-family: "Raleway", sans-serif;
     color: #000000;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 22px;
     text-decoration: underline;
@@ -68,6 +68,10 @@ const Experience = styled.div`
   p {
     text-decoration: none;
     font-weight: 300;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 22px;
   }
 
   ul {
@@ -116,23 +120,59 @@ const Resume = props => {
             </li>
           </ul>
         </Experience>
-        <br />
-        Digital Marketing Manager EVERFI | Washington D.C Apr. 2019 to Oct. 2019
-        Setup and managed 8 Facebook and Adwords campaigns and diagnosed all
-        data routing discrepancies in Marketo and Salesforce CRM. Created new
-        Wordpress pages and built out new custom components with HTML and CSS.
-        <br />
-        Marketing Analytics Manager UMGC | Adelphi, MD Jan. 2019 to Apr. 2019
-        Examined PPC lead generation campaign to identify ways to decrease
-        average cost-per-lead. Assembled data reports in Tableau to analyze
-        previous TV and radio ratings and spend data.
-        <br />
-        Digital Marketing Strategist Membership Marketing Partners | Alexandria,
-        VA Oct. 2015 to Dec. 2019 Built custom responsive email templates in
-        HTML and CSS for automated email marketing campaigns. Used SQL database
-        to query email segments of 3 million plus subscribers. Worked with
-        developers to create new landing pages to improve mobile usability and
-        implement SEO features to increase organic search rankings.
+        <Experience>
+          <p>
+            Digital Marketing Manager EVERFI | Washington D.C Apr. 2019 to Oct.
+            2019
+          </p>
+          <ul>
+            <li>
+              Setup and managed 8 Facebook and Adwords campaigns and diagnosed
+              all data routing discrepancies in Marketo and Salesforce CRM.
+            </li>
+            <li>
+              Created new Wordpress pages and built out new custom components
+              with HTML and CSS.
+            </li>
+          </ul>
+        </Experience>
+        <Experience>
+          <p>
+            Marketing Analytics Manager UMGC | Adelphi, MD Jan. 2019 to Apr.
+            2019
+          </p>
+          <ul>
+            <li>
+              Examined PPC lead generation campaign to identify ways to decrease
+              average cost-per-lead.
+            </li>
+            <li>
+              Assembled data reports in Tableau to analyze previous TV and radio
+              ratings and spend data.
+            </li>
+          </ul>
+        </Experience>
+        <Experience>
+          <p>
+            Digital Marketing Strategist Membership Marketing Partners |
+            Alexandria, VA Oct. 2015 to Dec. 2019
+          </p>
+          <ul>
+            <li>
+              Built custom responsive email templates in HTML and CSS for
+              automated email marketing campaigns.
+            </li>
+            <li>
+              Used SQL database to query email segments of 3 million plus
+              subscribers.
+            </li>
+            <li>
+              Worked with developers to create new landing pages to improve
+              mobile usability and implement SEO features to increase organic
+              search rankings.
+            </li>
+          </ul>
+        </Experience>
       </ResumeContainer>
     </Section>
   )
