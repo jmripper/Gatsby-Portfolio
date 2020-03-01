@@ -54,12 +54,16 @@ const Bio = styled.p`
   margin: 0;
 `
 const Experience = styled.div`
-  font-family: "Raleway", sans-serif;
-  color: #000000;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  text-decoration: underline;
+  display: block;
+
+  span {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+  }
 
   p {
     text-decoration: none;
@@ -99,7 +103,7 @@ const Resume = props => {
           discover new innovative solutions.
         </Bio>
         <Experience>
-          EXPERIENCE:
+          <span>EXPERIENCE:</span>
           <p>
             Software Engineering Immersive General Assembly | Washington D.C
             Nov. 2019 to Feb. 2020
