@@ -13,8 +13,8 @@ const Section = styled.section`
     font-weight: 400;
     color: #000000;
     text-align: center;
-    font-size: 16px;
-    margin: 0 auto 1rem;
+    font-size: 2em;
+    margin: 1em auto;
     padding: 0;
   }
 
@@ -173,6 +173,10 @@ const Education = styled.div`
     padding: 0;
   }
 
+  p:first-child {
+    padding: 15px 0 0 0 !important;
+  }
+
   p {
     margin: 0;
     padding: 0;
@@ -181,10 +185,6 @@ const Education = styled.div`
     font-size: 16px;
     line-height: 22px;
     font-weight: 300;
-  }
-
-  p:first-child {
-    padding: 15px 0 0 0;
   }
 
   p:nth-child(5n) {
@@ -202,7 +202,7 @@ const Download = styled.button`
   padding: 8px;
   width: auto;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 1em auto;
   background-color: plum;
   color: #ffffff;
 `
