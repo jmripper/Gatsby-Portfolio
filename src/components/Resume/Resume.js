@@ -71,15 +71,6 @@ const Experience = styled.div`
     padding: 0;
   }
 
-  span {
-    text-decoration: none;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
   ul {
     margin: 0;
   }
@@ -96,7 +87,7 @@ const Experience = styled.div`
 const Title = styled.p`
   font-weight: 400;
   margin: 0;
-  padding: 0;
+  padding: 15px 0 0 0;
   font-size: 16px;
   line-height: 22px;
 `
@@ -104,19 +95,37 @@ const Title = styled.p`
 const SubTitle = styled.p`
   font-weight: 300;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10px;
   font-size: 16px;
   line-height: 22px;
   font-style: italic;
+  font-family: "Raleway", sans-serif;
 
   span {
     text-decoration: none;
+    font-family: inherit;
     font-weight: 300;
     margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 22px;
+    font-style: normal;
+    display: block;
   }
+`
+
+const ExperienceList = styled.ul`
+  margin: 0;
+
+li {
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
+}
 `
 
 const Skills = styled.div``
@@ -144,13 +153,13 @@ const Resume = props => {
             General Assembly | Washington D.C
             <span>Nov. 2019 to Feb. 2020</span>
           </SubTitle>
-          <ul>
+          <ExperienceList>
             <li>
               Completed 500+ hour full-time immersive Software Engineering
               program that included object-oriented programming, MVC frameworks,
               data modeling, and test-driven applications.
             </li>
-          </ul>
+          </ExperienceList>
         </Experience>
         <Experience>
           <Title>Digital Marketing Manager</Title>
@@ -158,7 +167,7 @@ const Resume = props => {
             EVERFI | Washington D.C
             <span>Apr. 2019 to Oct. 2019</span>
           </SubTitle>
-          <ul>
+          <ExperienceList>
             <li>
               Setup and managed 8 Facebook and Adwords campaigns and diagnosed
               all data routing discrepancies in Marketo and Salesforce CRM.
@@ -167,7 +176,7 @@ const Resume = props => {
               Created new Wordpress pages and built out new custom components
               with HTML and CSS.
             </li>
-          </ul>
+          </ExperienceList>
         </Experience>
         <Experience>
           <Title>Marketing Analytics Manager</Title>
@@ -175,7 +184,7 @@ const Resume = props => {
             UMGC | Adelphi, MD
             <span>Jan. 2019 to Apr. 2019</span>
           </SubTitle>
-          <ul>
+          <ExperienceList>
             <li>
               Examined PPC lead generation campaign to identify ways to decrease
               average cost-per-lead.
@@ -184,13 +193,15 @@ const Resume = props => {
               Assembled data reports in Tableau to analyze previous TV and radio
               ratings and spend data.
             </li>
-          </ul>
+          </ExperienceList>
         </Experience>
         <Experience>
           <Title>Digital Marketing Strategist</Title>
-          <SubTitle>Membership Marketing Partners | Alexandria, VA
-          <span>Oct. 2015 to Dec. 2019</span></SubTitle>
-          <ul>
+          <SubTitle>
+            Membership Marketing Partners | Alexandria, VA
+            <span>Oct. 2015 to Dec. 2019</span>
+          </SubTitle>
+          <ExperienceList>
             <li>
               Built custom responsive email templates in HTML and CSS for
               automated email marketing campaigns.
@@ -204,7 +215,7 @@ const Resume = props => {
               mobile usability and implement SEO features to increase organic
               search rankings.
             </li>
-          </ul>
+          </ExperienceList>
         </Experience>
       </ResumeContainer>
     </Section>
