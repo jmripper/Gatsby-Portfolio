@@ -120,6 +120,17 @@ const ExperienceList = styled.ul`
 const Skills = styled.div`
   display: flex;
   flex-flow: column;
+
+  h4 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+  }
 `
 
 const SkillsList = styled.ul`
@@ -136,6 +147,10 @@ const SkillsList = styled.ul`
     font-weight: 300;
     text-decoration: none;
     padding-bottom: 5px;
+  }
+
+  li:first-child {
+    font-weight: 600;
   }
 `
 
@@ -161,40 +176,23 @@ const Resume = props => {
           <h4>SKILLS</h4>
           <SkillsList>
             <li>Languages</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Python</li>
+            <li>HTML, CSS, Javascript, Python</li>
           </SkillsList>
           <SkillsList>
-            <li>React</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>SEO</li>
-            <li>JSON</li>
-            <li>Git</li>
-            <li>Gatsby</li>
-            <li>GraphQL</li>
+            <li>Web Technologies</li>
+            <li>React, Node, Express, SEO, JSON, Git, Gatsby, GraphQL</li>
           </SkillsList>
           <SkillsList>
             <li>Databases</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>Mongoose</li>
-            <li>PostgreSQL</li>
+            <li>MySQL, MongoDB, Mongoose, PostgreSQL</li>
           </SkillsList>
           <SkillsList>
             <li>Design</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Adobe XD</li>
-            <li>Dreamweaver</li>
+            <li>Photoshop, Illustrator, Adobe XD, Dreamweaver</li>
           </SkillsList>
           <SkillsList>
             <li>Data Analysis</li>
-            <li>Google Analytics</li>
-            <li>Google Tag Manager</li>
-            <li>Tableau</li>
+            <li>Google Analytics, Google Tag Manager, Tableau</li>
           </SkillsList>
         </Skills>
         <Experience>
