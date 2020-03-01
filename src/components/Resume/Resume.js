@@ -16,9 +16,9 @@ const Section = styled.section`
   }
 
   hr {
-      height: 1px;
-      background-color: #f4f4f4;
-      width: 100%;
+    height: 1px;
+    border: 4px #f4f4f4 solid;
+    width: 100%;
   }
 `
 const ResumeContainer = styled.div`
@@ -38,7 +38,14 @@ const Name = styled.h4`
     font-size: 16px;
     line-height: 22px;
     display: block;
+    padding: 5px 0;
   }
+`
+
+const Bio = styled.p`
+  font-family: 16px;
+  line-height: 22px;
+  text-align: center;
 `
 
 const Skills = styled.div``
@@ -50,14 +57,15 @@ const Resume = props => {
       <ResumeContainer>
         <Name>
           Jennifer Ripper
-          <span>Full-Stack Engineer</span>
+          <div>Full-Stack Engineer</div>
         </Name>
         <hr />
-        Full-stack engineer, driven to create high-quality products with
-        intuitive creative design and functionality. A team player who can
-        quickly adapt, with an analytical mind and is self-motivated to discover
-        new innovative solutions.
-        <br />
+        <Bio>
+          Full-stack engineer, driven to create high-quality products with
+          intuitive creative design and functionality. A team player who can
+          quickly adapt, with an analytical mind and is self-motivated to
+          discover new innovative solutions.
+        </Bio>
         Experience: Software Engineering Immersive General Assembly | Washington
         D.C Nov. 2019 to Feb. 2020 Completed 500+ hour full-time immersive
         Software Engineering program that included object-oriented programming,
