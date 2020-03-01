@@ -95,7 +95,7 @@ const Title = styled.p`
 const SubTitle = styled.p`
   font-weight: 300;
   margin: 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 10px 0;
   font-size: 16px;
   line-height: 22px;
   font-style: italic;
