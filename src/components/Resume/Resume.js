@@ -13,6 +13,9 @@ const Section = styled.section`
     font-weight: 400;
     color: #000000;
     text-align: center;
+    font-size: 16px;
+    margin: 1em auto;
+    padding: 0;
   }
 
   hr {
@@ -60,8 +63,8 @@ const Experience = styled.div`
     font-family: "Raleway", sans-serif;
     color: #000000;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
     text-decoration: underline;
   }
 
@@ -69,7 +72,7 @@ const Experience = styled.div`
     text-decoration: none;
     font-weight: 300;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     font-size: 16px;
     line-height: 22px;
   }
@@ -86,6 +89,14 @@ const Experience = styled.div`
     font-weight: 300;
     text-decoration: none;
   }
+`
+const Title = styled.p`
+  text-decoration: none;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
 `
 
 const Skills = styled.div``
@@ -108,7 +119,7 @@ const Resume = props => {
         </Bio>
         <Experience>
           <h4>EXPERIENCE:</h4>
-          <p>Software Engineering Immersive</p>
+          <Title>Software Engineering Immersive</Title>
           <p>General Assembly | Washington D.C</p>
           <p>Nov. 2019 to Feb. 2020</p>
           <ul>
@@ -120,7 +131,7 @@ const Resume = props => {
           </ul>
         </Experience>
         <Experience>
-          <p>Digital Marketing Manager</p>
+          <Title>Digital Marketing Manager</Title>
           <p>EVERFI | Washington D.C</p>
           <p>Apr. 2019 to Oct. 2019</p>
           <ul>
@@ -135,7 +146,7 @@ const Resume = props => {
           </ul>
         </Experience>
         <Experience>
-          <p>Marketing Analytics Manager</p>
+          <Title>Marketing Analytics Manager</Title>
           <p>UMGC | Adelphi, MD</p>
           <p>Jan. 2019 to Apr. 2019</p>
           <ul>
@@ -150,7 +161,7 @@ const Resume = props => {
           </ul>
         </Experience>
         <Experience>
-          <p>Digital Marketing Strategist</p>
+          <Title>Digital Marketing Strategist</Title>
           <p>Membership Marketing Partners | Alexandria, VA</p>
           <p>Oct. 2015 to Dec. 2019</p>
           <ul>
