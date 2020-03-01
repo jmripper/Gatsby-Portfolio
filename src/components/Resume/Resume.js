@@ -59,6 +59,7 @@ const Bio = styled.p`
 const Experience = styled.div`
   display: flex;
   flex-flow: column;
+  padding-top: 15px;
 
   h4 {
     font-family: "Raleway", sans-serif;
@@ -137,6 +138,8 @@ const SkillsList = styled.ul`
   margin: 0;
   font-family: "Raleway", sans-serif;
   list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
 
   li {
     text-align: left;
@@ -154,7 +157,22 @@ const SkillsList = styled.ul`
   }
 `
 
-const Education = styled.div``
+const Education = styled.div`
+  display: block;
+  padding-top: 15px;
+  margin: 0;
+
+  h4 {
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+  }
+`
 
 const Resume = props => {
   return (
@@ -267,10 +285,15 @@ const Resume = props => {
           </ExperienceList>
         </Experience>
         <Education>
-          Software Engineering Immersive General Assembly Washington D.C. Nov.
-          2019 to Feb. 2020
-          Bachelor of Arts Ohio Wesleyan University Delaware, Ohio Aug. 2010 to
-          May 2014
+          <h4>EDUCATION</h4>
+          <p>Software Engineering Immersive</p>
+          <p>General Assembly</p>
+          <p>Washington D.C.</p>
+          <p>Nov. 2019 to Feb. 2020</p>
+          <p>Bachelor of Arts</p>
+          <p>Ohio Wesleyan University</p>
+          <p>Delaware, Ohio</p>
+          <p>Aug. 2010 to May 2014</p>
         </Education>
       </ResumeContainer>
     </Section>
