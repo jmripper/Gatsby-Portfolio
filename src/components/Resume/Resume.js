@@ -59,6 +59,7 @@ const Experience = styled.div`
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  text-decoration: underline;
 
   p {
     text-decoration: none;
@@ -98,7 +99,7 @@ const Resume = props => {
           discover new innovative solutions.
         </Bio>
         <Experience>
-          <u>EXPERIENCE:</u>
+          EXPERIENCE:
           <p>
             Software Engineering Immersive General Assembly | Washington D.C
             Nov. 2019 to Feb. 2020
