@@ -14,7 +14,7 @@ const Section = styled.section`
     color: #000000;
     text-align: center;
     font-size: 16px;
-    margin: 1em auto;
+    margin: 0 auto 1rem;
     padding: 0;
   }
 
@@ -57,7 +57,8 @@ const Bio = styled.p`
   margin: 0;
 `
 const Experience = styled.div`
-  display: block;
+  display: flex;
+  flex-flow: column;
 
   h4 {
     font-family: "Raleway", sans-serif;
@@ -66,9 +67,11 @@ const Experience = styled.div`
     font-size: 18px;
     line-height: 24px;
     text-decoration: underline;
+    margin: 0;
+    padding: 0;
   }
 
-  p {
+  span {
     text-decoration: none;
     font-weight: 300;
     margin: 0;
@@ -91,12 +94,29 @@ const Experience = styled.div`
   }
 `
 const Title = styled.p`
-  text-decoration: none;
   font-weight: 400;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
+`
+
+const SubTitle = styled.p`
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: italic;
+
+  span {
+    text-decoration: none;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
 `
 
 const Skills = styled.div``
@@ -120,8 +140,10 @@ const Resume = props => {
         <Experience>
           <h4>EXPERIENCE:</h4>
           <Title>Software Engineering Immersive</Title>
-          <p>General Assembly | Washington D.C</p>
-          <p>Nov. 2019 to Feb. 2020</p>
+          <SubTitle>
+            General Assembly | Washington D.C
+            <span>Nov. 2019 to Feb. 2020</span>
+          </SubTitle>
           <ul>
             <li>
               Completed 500+ hour full-time immersive Software Engineering
@@ -132,8 +154,10 @@ const Resume = props => {
         </Experience>
         <Experience>
           <Title>Digital Marketing Manager</Title>
-          <p>EVERFI | Washington D.C</p>
-          <p>Apr. 2019 to Oct. 2019</p>
+          <SubTitle>
+            EVERFI | Washington D.C
+            <span>Apr. 2019 to Oct. 2019</span>
+          </SubTitle>
           <ul>
             <li>
               Setup and managed 8 Facebook and Adwords campaigns and diagnosed
@@ -147,8 +171,10 @@ const Resume = props => {
         </Experience>
         <Experience>
           <Title>Marketing Analytics Manager</Title>
-          <p>UMGC | Adelphi, MD</p>
-          <p>Jan. 2019 to Apr. 2019</p>
+          <SubTitle>
+            UMGC | Adelphi, MD
+            <span>Jan. 2019 to Apr. 2019</span>
+          </SubTitle>
           <ul>
             <li>
               Examined PPC lead generation campaign to identify ways to decrease
@@ -162,8 +188,8 @@ const Resume = props => {
         </Experience>
         <Experience>
           <Title>Digital Marketing Strategist</Title>
-          <p>Membership Marketing Partners | Alexandria, VA</p>
-          <p>Oct. 2015 to Dec. 2019</p>
+          <SubTitle>Membership Marketing Partners | Alexandria, VA
+          <span>Oct. 2015 to Dec. 2019</span></SubTitle>
           <ul>
             <li>
               Built custom responsive email templates in HTML and CSS for
