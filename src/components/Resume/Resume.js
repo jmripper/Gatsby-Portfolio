@@ -56,7 +56,7 @@ const Bio = styled.p`
 const Experience = styled.div`
   display: block;
 
-  span {
+  h4 {
     font-family: "Raleway", sans-serif;
     color: #000000;
     font-weight: 700;
@@ -107,11 +107,10 @@ const Resume = props => {
           discover new innovative solutions.
         </Bio>
         <Experience>
-          <span>EXPERIENCE:</span>
-          <p>
-            Software Engineering Immersive General Assembly | Washington D.C
-            Nov. 2019 to Feb. 2020
-          </p>
+          <h4>EXPERIENCE:</h4>
+          <p>Software Engineering Immersive</p>
+          <p>General Assembly | Washington D.C</p>
+          <p>Nov. 2019 to Feb. 2020</p>
           <ul>
             <li>
               Completed 500+ hour full-time immersive Software Engineering
@@ -121,10 +120,9 @@ const Resume = props => {
           </ul>
         </Experience>
         <Experience>
-          <p>
-            Digital Marketing Manager EVERFI | Washington D.C Apr. 2019 to Oct.
-            2019
-          </p>
+          <p>Digital Marketing Manager</p>
+          <p>EVERFI | Washington D.C</p>
+          <p>Apr. 2019 to Oct. 2019</p>
           <ul>
             <li>
               Setup and managed 8 Facebook and Adwords campaigns and diagnosed
@@ -137,10 +135,9 @@ const Resume = props => {
           </ul>
         </Experience>
         <Experience>
-          <p>
-            Marketing Analytics Manager UMGC | Adelphi, MD Jan. 2019 to Apr.
-            2019
-          </p>
+          <p>Marketing Analytics Manager</p>
+          <p>UMGC | Adelphi, MD</p>
+          <p>Jan. 2019 to Apr. 2019</p>
           <ul>
             <li>
               Examined PPC lead generation campaign to identify ways to decrease
@@ -153,10 +150,9 @@ const Resume = props => {
           </ul>
         </Experience>
         <Experience>
-          <p>
-            Digital Marketing Strategist Membership Marketing Partners |
-            Alexandria, VA Oct. 2015 to Dec. 2019
-          </p>
+          <p>Digital Marketing Strategist</p>
+          <p>Membership Marketing Partners | Alexandria, VA</p>
+          <p>Oct. 2015 to Dec. 2019</p>
           <ul>
             <li>
               Built custom responsive email templates in HTML and CSS for
