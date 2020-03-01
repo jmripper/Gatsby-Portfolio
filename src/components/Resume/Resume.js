@@ -50,11 +50,15 @@ const Bio = styled.p`
   text-align: center;
   font-weight: 300;
   color: #000000;
+  padding: 1em 0;
+  margin: 0;
 `
 const Experience = styled.div`
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 
   p {
     text-decoration: none;
