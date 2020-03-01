@@ -54,7 +54,6 @@ const Bio = styled.p`
 const Experience = styled.div`
   font-family: "Raleway", sans-serif;
   color: #000000;
-  text-decoration: underline;
   font-weight: 600;
 
   p {
@@ -95,7 +94,7 @@ const Resume = props => {
           discover new innovative solutions.
         </Bio>
         <Experience>
-          EXPERIENCE:
+          <u>EXPERIENCE:</u>
           <p>
             Software Engineering Immersive General Assembly | Washington D.C
             Nov. 2019 to Feb. 2020
