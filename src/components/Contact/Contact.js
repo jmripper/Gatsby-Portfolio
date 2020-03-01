@@ -18,11 +18,42 @@ const Section = styled.section`
   }
 `
 
+const Form = styled.form`
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  justify-content: center;
+`
 
 const Contact = props => {
   return (
     <Section>
-      Contact Info:
+      <h2>Contact:</h2>
+      <Form>
+        <input
+          name="name"
+          id="Name"
+          placeholder="NAME"
+          required=""
+          type="text"
+          value=""
+        />
+        <input
+          name="email"
+          id="ContactFormEmail"
+          placeholder="EMAIL"
+          required=""
+          type="email"
+          value=""
+        />
+        <textarea
+          name="message"
+          id="ContactFormText"
+          placeholder="MESSAGE"
+          required=""
+        />
+        <button>Let's Connect</button>
+      </Form>
     </Section>
   )
 }
