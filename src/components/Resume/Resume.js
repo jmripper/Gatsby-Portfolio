@@ -172,12 +172,46 @@ const Education = styled.div`
     margin: 0;
     padding: 0;
   }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    color: #000000;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+  }
+
+  p:first-child {
+    padding: 15px 0 0 0;
+  }
+
+  p:nth-child(5n) {
+    padding: 15px 0 0 0;
+  }
+`
+
+const Download = styled.button`
+  border: 0;
+  border-radius: 6px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 8px;
+  width: auto;
+  cursor: pointer;
+  margin: 0 auto;
+  background-color: plum;
+  color: #ffffff;
 `
 
 const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
+      <Download>Download</Download>
       <ResumeContainer>
         <Name>
           Jennifer Ripper
