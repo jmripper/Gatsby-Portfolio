@@ -7,6 +7,15 @@ const Section = styled.section`
   padding: 70px 20px 30px;
   width: 100%;
   position: relative;
+  font-family: "Raleway", sans-serif;
+
+  h2 {
+    font-family: inherit;
+    font-size: 2em;
+    margin: 1em auto;
+    font-weight: 400;
+    text-align: center;
+  }
 `
 
 

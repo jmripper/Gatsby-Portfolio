@@ -170,11 +170,7 @@ const Education = styled.div`
     line-height: 24px;
     text-decoration: underline;
     margin: 0;
-    padding: 0;
-  }
-
-  p:first-child {
-    padding: 15px 0 0 0 !important;
+    padding: 0 0 15px 0;
   }
 
   p {
@@ -199,12 +195,14 @@ const Download = styled.button`
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  padding: 8px;
-  width: auto;
+  padding: 10px;
+  width: 80%;
   cursor: pointer;
-  margin: 1em auto;
-  background-color: plum;
+  margin: 0 auto 2em;;
+  background-color: navy;
+  font-family: "Raleway", sans-serif;
   color: #ffffff;
+  font-size: 18px;
 `
 
 const Resume = props => {
