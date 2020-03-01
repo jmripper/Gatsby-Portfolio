@@ -19,6 +19,7 @@ const Section = styled.section`
     height: 10px;
     background: #f4f4f4;
     width: 100%;
+    border: none;
   }
 `
 const ResumeContainer = styled.div`
@@ -44,7 +45,7 @@ const Name = styled.h2`
 `
 
 const Bio = styled.p`
-  font-family: 16px;
+  font-size: 16px;
   line-height: 22px;
   text-align: center;
   font-weight: 300;
@@ -53,9 +54,25 @@ const Bio = styled.p`
 const Experience = styled.div`
   font-family: "Raleway", sans-serif;
   color: #000000;
+  text-decoration: underline;
+  font-weight: 600;
+
+  p {
+    text-decoration: none;
+    font-weight: 300;
+  }
 
   ul {
     margin: 0;
+  }
+  li {
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 300;
+    text-decoration: none;
   }
 `
 
@@ -78,8 +95,11 @@ const Resume = props => {
           discover new innovative solutions.
         </Bio>
         <Experience>
-          Experience: Software Engineering Immersive General Assembly |
-          Washington D.C Nov. 2019 to Feb. 2020
+          EXPERIENCE:
+          <p>
+            Software Engineering Immersive General Assembly | Washington D.C
+            Nov. 2019 to Feb. 2020
+          </p>
           <ul>
             <li>
               Completed 500+ hour full-time immersive Software Engineering
