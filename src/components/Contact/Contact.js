@@ -31,9 +31,6 @@ const Section = styled.section`
     margin: 0;
   }
 
-  a {
-    color: #000000;
-  }
 `
 
 const Form = styled.form`
