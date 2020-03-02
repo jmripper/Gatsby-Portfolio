@@ -53,23 +53,26 @@ const Contact = props => {
   const handleSubmit = async e => {
     e.preventDefault()
 
-    try {
+    // try {
       const response = await fetch("/.netlify/functions/sendmail", {
         method: "POST",
         body: JSON.stringify(formState),
       })
-
-      if (!response.ok) {
-        //not 200 response
-        return
-      }
-      console.log("Thank you, your message has been sent")
-      alert("Success!")
-    } catch (error) {
+      .then((response) => {
+        if (!response.ok) {
+          //not 200 response
+          return
+        }
+        console.log("Thank you, your message has been sent")
+        alert("Success!")
+      })
+      .catch((error) => {
+        alert(error)
+      })
+    // } catch (error) {
       //error
-      alert(error)
+      // alert(error)
     }
-  }
 
   const handleChange = e => {
     setFormState({ ...formState, [e.target.name]: e.target.value })
