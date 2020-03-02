@@ -50,6 +50,7 @@ const GridItem = styled.li`
     text-align: left;
     text-rendering: optimizeLegibility;
     text-decoration: underline;
+    font-size: 1.4em;
   }
 
   p {
@@ -57,7 +58,9 @@ const GridItem = styled.li`
     font-weight: 400;
     text-align: left;
     text-rendering: optimizeLegibility;
-    margin: 1rem;
+    margin: 1em 1em 2em;
+    font-size: 16px;
+    line-height: 22px;
   }
 `
 
@@ -88,7 +91,9 @@ const Projects = props => {
                 alt="National Parks Trivia Game"
               />
             </div>
-            <h3>Trivia Game</h3>
+            <a href="https://jmripper.github.io/National_Parks_Trivia/">
+              <h3>Trivia Game</h3>
+            </a>
             <p>
               An interactive trivia game on the national parks built where a
               player get scored on the number of questions they get right. Built
@@ -118,7 +123,9 @@ const Projects = props => {
             </div>
             <h3>Tic-Tac-Toe</h3>
             <p>
-              A user can play a game of Tic Tac Toe with the computer. The game will reset once the reset button is clicked. Built using: Vanilla Javascript, HTML, & CSS.
+              A user can play a game of Tic Tac Toe with the computer. The game
+              will reset once the reset button is clicked. Built using: Vanilla
+              Javascript, HTML, & CSS.
             </p>
           </GridItem>
           <GridItem>
@@ -128,30 +135,6 @@ const Projects = props => {
               />
             </div>
             <h3>Modern T</h3>
-            <p>
-              An interactive trivia game on the national parks built using HTML,
-              CSS, and Vanilla JS.
-            </p>
-          </GridItem>
-          <GridItem>
-            <div>
-              <ProjectImage
-                fluid={props.data.triviaImage.childImageSharp.fluid}
-              />
-            </div>
-            <h3>Portfolio</h3>
-            <p>
-              An interactive trivia game on the national parks built using HTML,
-              CSS, and Vanilla JS.
-            </p>
-          </GridItem>
-          <GridItem>
-            <div>
-              <ProjectImage
-                fluid={props.data.triviaImage.childImageSharp.fluid}
-              />
-            </div>
-            <h3>Trivia Game</h3>
             <p>
               An interactive trivia game on the national parks built using HTML,
               CSS, and Vanilla JS.
