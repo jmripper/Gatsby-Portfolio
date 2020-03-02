@@ -82,7 +82,7 @@ const Submit = styled.a`
   padding: 10px;
   width: 80%;
   cursor: pointer;
-  margin: 0 auto 2em;
+  margin: 20px auto 5px;
   background-color: #000067;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
