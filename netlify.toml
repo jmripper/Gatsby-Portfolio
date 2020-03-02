@@ -7,7 +7,6 @@
   environment = { NODE_VERSION = "12.14.0", YARN_VERSION = "1.19.1" }
   
 [build]
-  base = "."
-  functions = "./functions"
+  functions = "functions"
   command = "npm run build"
   publish = "public"
