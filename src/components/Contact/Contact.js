@@ -28,13 +28,13 @@ const Form = styled.form`
   position: relative;
   justify-content: center;
   background-color: #f4f4f4;
-  padding: 20px 15px;
+  padding: 10px 15px 20px;
   border-radius: 6px;
   font-family: "Raleway", sans-serif;
 
   label {
-    padding: 5px 0;
-    font-size:16px;
+    padding: 10px 0 5px 0;
+    font-size: 16px;
     line-height: 18px;
     text-align: left;
     font-family: inherit;
@@ -44,6 +44,15 @@ const Form = styled.form`
     line-height: 1.5em;
     padding: 2px;
     border-radius: 6px;
+  }
+
+  textarea {
+    border-style: inset;
+    border-radius: 6px;
+    line-height: 1.5em;
+    padding: 2px;
+    border-width: 2px;
+    border-color: initial;
   }
 `
 const Submit = styled.button`
@@ -56,7 +65,7 @@ const Submit = styled.button`
   padding: 10px;
   width: 80%;
   cursor: pointer;
-  margin: 0 auto 2em;
+  margin: 20px auto 0;
   background-color: navy;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
@@ -75,11 +84,11 @@ const Contact = props => {
     e.preventDefault()
 
     // try {
-      const response = await fetch("/.netlify/functions/sendmail", {
-        method: "POST",
-        body: JSON.stringify(formState),
-      })
-      .then((response) => {
+    const response = await fetch("/.netlify/functions/sendmail", {
+      method: "POST",
+      body: JSON.stringify(formState),
+    })
+      .then(response => {
         if (!response.ok) {
           //not 200 response
           return
@@ -87,13 +96,13 @@ const Contact = props => {
         console.log("Thank you, your message has been sent")
         alert("Success!")
       })
-      .catch((error) => {
+      .catch(error => {
         alert(error)
       })
     // } catch (error) {
-      //error
-      // alert(error)
-    }
+    //error
+    // alert(error)
+  }
 
   const handleChange = e => {
     setFormState({ ...formState, [e.target.name]: e.target.value })
@@ -110,7 +119,6 @@ const Contact = props => {
           onChange={handleChange}
           name="name"
           id="Name"
-          placeholder="NAME"
           required
           type="text"
         />
@@ -119,7 +127,6 @@ const Contact = props => {
           onChange={handleChange}
           name="email"
           id="email"
-          placeholder="EMAIL"
           required
           type="email"
         />
@@ -137,7 +144,6 @@ const Contact = props => {
           name="message"
           id="message"
           rows="5"
-          placeholder="MESSAGE"
           required
         />
         <Submit>Let's Connect</Submit>
