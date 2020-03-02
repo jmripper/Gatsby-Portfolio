@@ -43,25 +43,35 @@ const Submit = styled.button`
 `
 
 const Contact = props => {
-  const [input, setInput] = useState({
+  const [formState, setFormState] = useState({
     name: "",
     email: "",
-    subject: "Portfolio Contact Form",
-    text: "",
+    subject: "",
+    message: "",
   })
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault();
-    let templateParams = {
-      from_name: input.email,
-      to_name: input.email,
-      subject: input.subject,
-      message: input.message,
-     }
+    
+    try{
+      const response = await fetch("/.netlify/functions/sendmail", {
+        method: "POST",
+        body: JSON.stringify(formState),
+      })
+
+      if (!response.ok) {
+        //not 200 response
+        return
+      }
+    } catch(e){
+      //error
+    }
+  
   }
 
   const handleChange = e => {
-    
+    setFormState({...formState, [e.target.name]: e.target.value});
+
   }
 
   const resetForm = () => {
