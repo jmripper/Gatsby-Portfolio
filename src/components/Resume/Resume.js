@@ -191,7 +191,7 @@ const Education = styled.div`
   }
 `
 
-const Download = styled.button`
+const Download = styled.a`
   border: 0;
   border-radius: 6px;
   position: relative;
@@ -218,10 +218,8 @@ const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
-      <Download>
-        <a href=".../images/Ripper_Resume.pdf" download>
+      <Download href="/Ripper_Resume.pdf" target="_blank">
           Download
-        </a>
       </Download>
       <ResumeContainer>
         <Name>
