@@ -20,6 +20,12 @@ const Section = styled.section`
     font-weight: 400;
     text-align: center;
   }
+
+  p {
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+  }
 `
 
 const Form = styled.form`
@@ -30,7 +36,13 @@ const Form = styled.form`
   background-color: #f4f4f4;
   padding: 10px 15px 20px;
   border-radius: 6px;
+  margin: 0 auto;
   font-family: "Raleway", sans-serif;
+
+  @media (min-width: 425px) {
+    max-width: 600px;
+    padding: 30px 45px 40px;
+  }
 
   label {
     padding: 10px 0 5px 0;
@@ -113,6 +125,7 @@ const Contact = props => {
   return (
     <Section>
       <h2>Contact:</h2>
+      <p>Let's Connect! I’d love to hear from you. Also, feel free to connect with me on </p>
       <Form name="contact" onSubmit={handleSubmit} method="post">
         <label htmlFor="name">Name *</label>
         <input
