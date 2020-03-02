@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Resume from "./Ripper_Resume.pdf";
+import RipperResume from "./Ripper_Resume.pdf";
 
 const Section = styled.section`
   text-align: center;
@@ -219,7 +219,7 @@ const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
-      <Download href={Resume} download>
+      <Download href={RipperResume} download>
           Download
       </Download>
       <ResumeContainer>
