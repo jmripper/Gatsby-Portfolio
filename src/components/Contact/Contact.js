@@ -74,10 +74,6 @@ const Contact = props => {
 
   }
 
-  const resetForm = () => {
-    setInput({ name: "", email: "", message: "" });
-  }
-
   return (
     <Section>
       <h2>Contact:</h2>
@@ -88,7 +84,6 @@ const Contact = props => {
           placeholder="NAME"
           required
           type="text"
-          value={input.name}
         />
         <input
           name="email"
@@ -96,7 +91,6 @@ const Contact = props => {
           placeholder="EMAIL"
           required
           type="email"
-          value={input.email}
         />
         <textarea
           type="textarea"
@@ -104,7 +98,6 @@ const Contact = props => {
           id="ContactText"
           placeholder="MESSAGE"
           required
-          value={input.text}
         />
         <Submit>Let's Connect</Submit>
       </Form>
