@@ -75,7 +75,7 @@ const Form = styled.form`
     border-color: initial;
   }
 `
-const Submit = styled.button`
+const Submit = styled.a`
   border: 0;
   border-radius: 6px;
   position: relative;
@@ -85,11 +85,18 @@ const Submit = styled.button`
   padding: 10px;
   width: 80%;
   cursor: pointer;
-  margin: 20px auto 0;
-  background-color: navy;
+  margin: 0 auto 2em;
+  background-color: #000067;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   font-size: 18px;
+  display: block;
+
+  &:hover {
+    background-color: #0000a2;
+    border: 4px solid #0000a2;
+    text-decoration: underline;
+  }
 `
 
 const Contact = props => {
