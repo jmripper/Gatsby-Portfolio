@@ -25,6 +25,14 @@ const Section = styled.section`
     font-family: inherit;
     font-weight: 400;
     text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 0 15px 20px;
+    margin: 0;
+  }
+
+  a {
+    
   }
 `
 
@@ -125,7 +133,7 @@ const Contact = props => {
   return (
     <Section>
       <h2>Contact:</h2>
-      <p>Let's Connect! I’d love to hear from you. Also, feel free to connect with me on </p>
+      <p>Let's Connect! I’d love to hear from you. Also, feel free to connect with me on <a href="https://www.linkedin.com/in/jennifer-ripper/">LinkedIn</a>!</p>
       <Form name="contact" onSubmit={handleSubmit} method="post">
         <label htmlFor="name">Name *</label>
         <input
