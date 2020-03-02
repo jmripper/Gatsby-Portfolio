@@ -202,19 +202,27 @@ const Download = styled.button`
   width: 80%;
   cursor: pointer;
   margin: 0 auto 2em;
-  background-color: navy;
+  background-color: #000067;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   font-size: 18px;
+
+  &:hover {
+    background-color: #0000a2;
+    border: 4px solid #0000a2;
+    text-decoration: underline;
+  }
 `
 
 const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
-      <a href="../images/Ripper_Resume.pdf" download>
-        <Download>Download</Download>
-      </a>
+      <Download>
+        <a href=".../images/Ripper_Resume.pdf" download>
+          Download
+        </a>
+      </Download>
       <ResumeContainer>
         <Name>
           Jennifer Ripper
