@@ -207,6 +207,7 @@ const Download = styled.a`
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   font-size: 18px;
+  display: block;
 
   &:hover {
     background-color: #0000a2;
