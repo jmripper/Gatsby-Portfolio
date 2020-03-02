@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 
 const Section = styled.section`
@@ -23,9 +23,51 @@ const Form = styled.form`
   flex-flow: column;
   position: relative;
   justify-content: center;
+  background-color: #f4f4f4;
+`
+const Submit = styled.button`
+  border: 0;
+  border-radius: 6px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 10px;
+  width: 80%;
+  cursor: pointer;
+  margin: 0 auto 2em;
+  background-color: navy;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
 `
 
 const Contact = props => {
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    subject: "Portfolio Contact Form",
+    text: "",
+  })
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    let templateParams = {
+      from_name: input.email,
+      to_name: input.email,
+      subject: input.subject,
+      message: input.message,
+     }
+  }
+
+  const handleChange = e => {
+    
+  }
+
+  const resetForm = () => {
+    setInput({ name: "", email: "", message: "" });
+  }
+
   return (
     <Section>
       <h2>Contact:</h2>
@@ -34,25 +76,27 @@ const Contact = props => {
           name="name"
           id="Name"
           placeholder="NAME"
-          required=""
+          required
           type="text"
-          value=""
+          value={input.name}
         />
         <input
           name="email"
-          id="ContactFormEmail"
+          id="ContactEmail"
           placeholder="EMAIL"
-          required=""
+          required
           type="email"
-          value=""
+          value={input.email}
         />
         <textarea
+          type="textarea"
           name="message"
-          id="ContactFormText"
+          id="ContactText"
           placeholder="MESSAGE"
-          required=""
+          required
+          value={input.text}
         />
-        <button>Let's Connect</button>
+        <Submit>Let's Connect</Submit>
       </Form>
     </Section>
   )

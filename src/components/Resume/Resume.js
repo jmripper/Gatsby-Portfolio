@@ -183,7 +183,7 @@ const Education = styled.div`
     font-weight: 300;
   }
 
-  p:nth-child(5n) {
+  p:nth-child(6n) {
     padding: 15px 0 0 0;
   }
 `
