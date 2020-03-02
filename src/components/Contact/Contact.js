@@ -4,10 +4,14 @@ import styled from "styled-components"
 const Section = styled.section`
   text-align: center;
   background-color: #ffffff;
-  padding: 70px 20px 30px;
+  padding: 70px 0 30px;
   width: 100%;
   position: relative;
   font-family: "Raleway", sans-serif;
+
+  @media (min-width: 375px) {
+    padding: 70px 20px 30px;
+  }
 
   h2 {
     font-family: inherit;
@@ -24,6 +28,23 @@ const Form = styled.form`
   position: relative;
   justify-content: center;
   background-color: #f4f4f4;
+  padding: 20px 15px;
+  border-radius: 6px;
+  font-family: "Raleway", sans-serif;
+
+  label {
+    padding: 5px 0;
+    font-size:16px;
+    line-height: 18px;
+    text-align: left;
+    font-family: inherit;
+  }
+
+  input {
+    line-height: 1.5em;
+    padding: 2px;
+    border-radius: 6px;
+  }
 `
 const Submit = styled.button`
   border: 0;
