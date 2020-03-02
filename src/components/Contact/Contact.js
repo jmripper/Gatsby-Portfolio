@@ -32,7 +32,7 @@ const Section = styled.section`
   }
 
   a {
-    
+    color: #000000;
   }
 `
 

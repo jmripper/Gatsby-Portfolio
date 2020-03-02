@@ -24,6 +24,9 @@ const Section = styled.section`
     width: 100%;
     border: none;
   }
+
+  a {
+  }
 `
 const ResumeContainer = styled.div`
   display: flex;
@@ -198,7 +201,7 @@ const Download = styled.button`
   padding: 10px;
   width: 80%;
   cursor: pointer;
-  margin: 0 auto 2em;;
+  margin: 0 auto 2em;
   background-color: navy;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
@@ -209,7 +212,9 @@ const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
-      <Download>Download</Download>
+      <a href="../images/Ripper_Resume.pdf" download>
+        <Download>Download</Download>
+      </a>
       <ResumeContainer>
         <Name>
           Jennifer Ripper
