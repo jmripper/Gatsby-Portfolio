@@ -51,9 +51,9 @@ const Contact = props => {
   })
 
   const handleSubmit = async e => {
-    e.preventDefault();
-    
-    try{
+    e.preventDefault()
+
+    try {
       const response = await fetch("/.netlify/functions/sendmail", {
         method: "POST",
         body: JSON.stringify(formState),
@@ -63,39 +63,56 @@ const Contact = props => {
         //not 200 response
         return
       }
-    } catch(e){
+      console.log("Thank you, your message has been sent")
+      alert("Success!")
+    } catch (error) {
       //error
+      alert(error)
     }
-  
   }
 
   const handleChange = e => {
-    setFormState({...formState, [e.target.name]: e.target.value});
-
+    setFormState({ ...formState, [e.target.name]: e.target.value })
   }
+
+  const formError = () => {}
 
   return (
     <Section>
       <h2>Contact:</h2>
-      <Form>
+      <Form name="contact" onSubmit={handleSubmit} method="post">
+        <label htmlFor="name">Name *</label>
         <input
+          onChange={handleChange}
           name="name"
           id="Name"
           placeholder="NAME"
           required
           type="text"
         />
+        <label htmlFor="email">Email *</label>
         <input
+          onChange={handleChange}
           name="email"
-          id="ContactEmail"
+          id="email"
           placeholder="EMAIL"
           required
           type="email"
         />
+        <label htmlFor="subject">Subject</label>
+        <input
+          onChange={handleChange}
+          type="text"
+          name="subject"
+          id="subject"
+        />
+        <label htmlFor="message">Message *</label>
         <textarea
+          onChange={handleChange}
           type="textarea"
           name="message"
-          id="ContactText"
+          id="message"
+          rows="5"
           placeholder="MESSAGE"
           required
         />
