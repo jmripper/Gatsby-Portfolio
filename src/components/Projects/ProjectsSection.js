@@ -62,6 +62,14 @@ const GridItem = styled.li`
     font-size: 16px;
     line-height: 22px;
   }
+
+  a {
+    color: #000000;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `
 
 const ProjectImage = styled(Img)`
@@ -91,7 +99,10 @@ const Projects = props => {
                 alt="National Parks Trivia Game"
               />
             </div>
-            <a href="https://jmripper.github.io/National_Parks_Trivia/">
+            <a
+              href="https://jmripper.github.io/National_Parks_Trivia/"
+              target="_blank"
+            >
               <h3>Trivia Game</h3>
             </a>
             <p>
@@ -107,7 +118,12 @@ const Projects = props => {
                 alt="jMdB Screenshot"
               />
             </div>
-            <h3>jMDb</h3>
+            <a
+              href="https://master.d17c6pxzujr60l.amplifyapp.com/"
+              target="_blank"
+            >
+              <h3>jMDb</h3>
+            </a>
             <p>
               jMDb is a full-stack MERN application where one can view, add,
               update, and delete a movie. Built using MongoDB, Express,
@@ -121,7 +137,9 @@ const Projects = props => {
                 alt="Tic-Tac-Toe Game"
               />
             </div>
+            <a href="https://jmripper.github.io/tic-tac-toe/" target="_blank">
             <h3>Tic-Tac-Toe</h3>
+            </a>
             <p>
               A user can play a game of Tic Tac Toe with the computer. The game
               will reset once the reset button is clicked. Built using: Vanilla
