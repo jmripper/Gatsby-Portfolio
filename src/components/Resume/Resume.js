@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Resume from "./Ripper_Resume.pdf";
 
 const Section = styled.section`
   text-align: center;
@@ -218,7 +219,7 @@ const Resume = props => {
   return (
     <Section>
       <h3>Resume:</h3>
-      <Download href="/Ripper_Resume.pdf" target="_blank">
+      <Download href={Resume} download>
           Download
       </Download>
       <ResumeContainer>
