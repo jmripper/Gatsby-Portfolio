@@ -371,7 +371,7 @@ const Resume = props => {
               </ExperienceList>
             </Experience>
           </ExperienceContainer>
-        </InnerContainer>
+
         <Education>
           <h4>EDUCATION</h4>
           <p>Software Engineering Immersive</p>
@@ -383,6 +383,7 @@ const Resume = props => {
           <p>Delaware, Ohio</p>
           <p>Aug. 2010 to May 2014</p>
         </Education>
+        </InnerContainer>
       </ResumeContainer>
     </Section>
   )
