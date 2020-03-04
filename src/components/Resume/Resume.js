@@ -65,7 +65,8 @@ const Bio = styled.p`
   font-weight: 300;
   color: #000000;
   padding: 1em 0;
-  margin: 0;
+  max-width: 700px;
+  margin: 0 auto;
 `
 const Experience = styled.div`
   display: flex;
@@ -83,6 +84,12 @@ const Experience = styled.div`
     padding: 0;
   }
 `
+
+const InnerContainer = styled.div`
+  display: flex;
+  flex-flow: column;
+`
+
 const Title = styled.p`
   font-weight: 400;
   margin: 0;
@@ -245,6 +252,7 @@ const Resume = props => {
           quickly adapt, with an analytical mind and is self-motivated to
           discover new innovative solutions.
         </Bio>
+        <InnerContainer>
         <Skills>
           <h4>SKILLS</h4>
           <SkillsList>
@@ -339,6 +347,7 @@ const Resume = props => {
             </li>
           </ExperienceList>
         </Experience>
+        </InnerContainer>
         <Education>
           <h4>EDUCATION</h4>
           <p>Software Engineering Immersive</p>
