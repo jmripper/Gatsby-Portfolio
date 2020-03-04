@@ -136,6 +136,11 @@ const ExperienceList = styled.ul`
   }
 `
 
+const ExperienceContainer = styled.div`
+  display: flex;
+  flex-flow: column;
+`
+
 const Skills = styled.div`
   display: flex;
   flex-flow: column;
@@ -170,6 +175,10 @@ const SkillsList = styled.ul`
     font-weight: 300;
     text-decoration: none;
     padding-bottom: 5px;
+
+    @media (min-width: 600px) {
+      text-align: left;
+    }
   }
 
   li:first-child {
@@ -253,100 +262,103 @@ const Resume = props => {
           discover new innovative solutions.
         </Bio>
         <InnerContainer>
-        <Skills>
-          <h4>SKILLS</h4>
-          <SkillsList>
-            <li>Languages</li>
-            <li>HTML, CSS, Javascript, Python</li>
-          </SkillsList>
-          <SkillsList>
-            <li>Web Technologies</li>
-            <li>React, Node, Express, SEO, JSON, Git, Gatsby, GraphQL</li>
-          </SkillsList>
-          <SkillsList>
-            <li>Databases</li>
-            <li>MySQL, MongoDB, Mongoose, PostgreSQL</li>
-          </SkillsList>
-          <SkillsList>
-            <li>Design</li>
-            <li>Photoshop, Illustrator, Adobe XD, Dreamweaver</li>
-          </SkillsList>
-          <SkillsList>
-            <li>Data Analysis</li>
-            <li>Google Analytics, Google Tag Manager, Tableau</li>
-          </SkillsList>
-        </Skills>
-        <Experience>
-          <h4>EXPERIENCE:</h4>
-          <Title>Software Engineering Immersive</Title>
-          <SubTitle>
-            General Assembly | Washington D.C
-            <span>Nov. 2019 to Feb. 2020</span>
-          </SubTitle>
-          <ExperienceList>
-            <li>
-              Completed 500+ hour full-time immersive Software Engineering
-              program that included object-oriented programming, MVC frameworks,
-              data modeling, and test-driven applications.
-            </li>
-          </ExperienceList>
-        </Experience>
-        <Experience>
-          <Title>Digital Marketing Manager</Title>
-          <SubTitle>
-            EVERFI | Washington D.C
-            <span>Apr. 2019 to Oct. 2019</span>
-          </SubTitle>
-          <ExperienceList>
-            <li>
-              Setup and managed 8 Facebook and Adwords campaigns and diagnosed
-              all data routing discrepancies in Marketo and Salesforce CRM.
-            </li>
-            <li>
-              Created new Wordpress pages and built out new custom components
-              with HTML and CSS.
-            </li>
-          </ExperienceList>
-        </Experience>
-        <Experience>
-          <Title>Marketing Analytics Manager</Title>
-          <SubTitle>
-            UMGC | Adelphi, MD
-            <span>Jan. 2019 to Apr. 2019</span>
-          </SubTitle>
-          <ExperienceList>
-            <li>
-              Examined PPC lead generation campaign to identify ways to decrease
-              average cost-per-lead.
-            </li>
-            <li>
-              Assembled data reports in Tableau to analyze previous TV and radio
-              ratings and spend data.
-            </li>
-          </ExperienceList>
-        </Experience>
-        <Experience>
-          <Title>Digital Marketing Strategist</Title>
-          <SubTitle>
-            Membership Marketing Partners | Alexandria, VA
-            <span>Oct. 2015 to Dec. 2019</span>
-          </SubTitle>
-          <ExperienceList>
-            <li>
-              Built custom responsive email templates in HTML and CSS for
-              automated email marketing campaigns.
-            </li>
-            <li>
-              Used SQL database to query email segments of 3 million plus
-              subscribers.
-            </li>
-            <li>
-              Worked with developers to create new landing pages to improve
-              mobile usability and implement SEO features to increase organic
-              search rankings.
-            </li>
-          </ExperienceList>
-        </Experience>
+          <Skills>
+            <h4>SKILLS</h4>
+            <SkillsList>
+              <li>Languages</li>
+              <li>HTML, CSS, Javascript, Python</li>
+            </SkillsList>
+            <SkillsList>
+              <li>Web Technologies</li>
+              <li>React, Node, Express, SEO, JSON, Git, Gatsby, GraphQL</li>
+            </SkillsList>
+            <SkillsList>
+              <li>Databases</li>
+              <li>MySQL, MongoDB, Mongoose, PostgreSQL</li>
+            </SkillsList>
+            <SkillsList>
+              <li>Design</li>
+              <li>Photoshop, Illustrator, Adobe XD, Dreamweaver</li>
+            </SkillsList>
+            <SkillsList>
+              <li>Data Analysis</li>
+              <li>Google Analytics, Google Tag Manager, Tableau</li>
+            </SkillsList>
+          </Skills>
+          <ExperienceContainer>
+            <Experience>
+              <h4>EXPERIENCE:</h4>
+              <Title>Software Engineering Immersive</Title>
+              <SubTitle>
+                General Assembly | Washington D.C
+                <span>Nov. 2019 to Feb. 2020</span>
+              </SubTitle>
+              <ExperienceList>
+                <li>
+                  Completed 500+ hour full-time immersive Software Engineering
+                  program that included object-oriented programming, MVC
+                  frameworks, data modeling, and test-driven applications.
+                </li>
+              </ExperienceList>
+            </Experience>
+            <Experience>
+              <Title>Digital Marketing Manager</Title>
+              <SubTitle>
+                EVERFI | Washington D.C
+                <span>Apr. 2019 to Oct. 2019</span>
+              </SubTitle>
+              <ExperienceList>
+                <li>
+                  Setup and managed 8 Facebook and Adwords campaigns and
+                  diagnosed all data routing discrepancies in Marketo and
+                  Salesforce CRM.
+                </li>
+                <li>
+                  Created new Wordpress pages and built out new custom
+                  components with HTML and CSS.
+                </li>
+              </ExperienceList>
+            </Experience>
+            <Experience>
+              <Title>Marketing Analytics Manager</Title>
+              <SubTitle>
+                UMGC | Adelphi, MD
+                <span>Jan. 2019 to Apr. 2019</span>
+              </SubTitle>
+              <ExperienceList>
+                <li>
+                  Examined PPC lead generation campaign to identify ways to
+                  decrease average cost-per-lead.
+                </li>
+                <li>
+                  Assembled data reports in Tableau to analyze previous TV and
+                  radio ratings and spend data.
+                </li>
+              </ExperienceList>
+            </Experience>
+            <Experience>
+              <Title>Digital Marketing Strategist</Title>
+              <SubTitle>
+                Membership Marketing Partners | Alexandria, VA
+                <span>Oct. 2015 to Dec. 2019</span>
+              </SubTitle>
+              <ExperienceList>
+                <li>
+                  Built custom responsive email templates in HTML and CSS for
+                  automated email marketing campaigns.
+                </li>
+                <li>
+                  Used SQL database to query email segments of 3 million plus
+                  subscribers.
+                </li>
+                <li>
+                  Worked with developers to create new landing pages to improve
+                  mobile usability and implement SEO features to increase
+                  organic search rankings.
+                </li>
+              </ExperienceList>
+            </Experience>
+          </ExperienceContainer>
         </InnerContainer>
         <Education>
           <h4>EDUCATION</h4>
