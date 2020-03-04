@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import RipperResume from "./Ripper_Resume.pdf";
+import RipperResume from "./Ripper_Resume.pdf"
 
 const Section = styled.section`
   text-align: center;
@@ -33,6 +33,13 @@ const ResumeContainer = styled.div`
   display: flex;
   flex-flow: column;
   font-family: "Raleway", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  @media (min-width: 768px) {
+    border: 1px solid #000000;
+    padding: 20px 15px;
+  }
 `
 
 const Name = styled.h2`
@@ -135,6 +142,8 @@ const Skills = styled.div`
     text-decoration: underline;
     margin: 0;
     padding: 0;
+    display: block;
+    width: 100%;
   }
 `
 
@@ -146,7 +155,7 @@ const SkillsList = styled.ul`
   margin: 0;
 
   li {
-    text-align: left;
+    text-align: center;
     font-family: inherit;
     font-size: 16px;
     line-height: 22px;
@@ -208,6 +217,7 @@ const Download = styled.a`
   color: #ffffff;
   font-size: 18px;
   display: block;
+  max-width: 600px;
 
   &:hover {
     background-color: #0000a2;
@@ -221,7 +231,7 @@ const Resume = props => {
     <Section>
       <h3>Resume:</h3>
       <Download href={RipperResume} download>
-          Download
+        Download
       </Download>
       <ResumeContainer>
         <Name>
