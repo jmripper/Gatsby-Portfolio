@@ -88,6 +88,9 @@ const Experience = styled.div`
 const InnerContainer = styled.div`
   display: flex;
   flex-flow: column;
+  @media (min-width: 768px) {
+      flex-flow: row-reverse;
+  }
 `
 
 const Title = styled.p`
@@ -139,11 +142,17 @@ const ExperienceList = styled.ul`
 const ExperienceContainer = styled.div`
   display: flex;
   flex-flow: column;
+  @media (min-width: 768px) {
+      width: 65%;
+  }
 `
 
 const Skills = styled.div`
   display: flex;
   flex-flow: column;
+  @media (min-width: 768px) {
+    width: 35%;
+  }
 
   h4 {
     font-family: "Raleway", sans-serif;
@@ -156,6 +165,9 @@ const Skills = styled.div`
     padding: 0;
     display: block;
     width: 100%;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 `
 
