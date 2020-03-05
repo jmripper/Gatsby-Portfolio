@@ -217,10 +217,13 @@ const EducationContainer = styled.div`
     text-decoration: underline;
     margin: 0;
     padding: 0 0 15px 0;
+    width: 100%;
   }
 
   @media (min-width: 768px) {
     flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
   }
 `
 
