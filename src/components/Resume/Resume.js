@@ -82,6 +82,9 @@ const Experience = styled.div`
     text-decoration: underline;
     margin: 0;
     padding: 0;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
   }
 `
 
@@ -96,6 +99,9 @@ const Title = styled.p`
   padding: 15px 0 0 0;
   font-size: 16px;
   line-height: 22px;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `
 
 const SubTitle = styled.p`
@@ -106,6 +112,9 @@ const SubTitle = styled.p`
   line-height: 22px;
   font-style: italic;
   font-family: "Raleway", sans-serif;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 
   span {
     text-decoration: none;
@@ -140,7 +149,6 @@ const ExperienceContainer = styled.div`
   display: flex;
   flex-flow: column;
   @media (min-width: 768px) {
-      width: 65%;
   }
 `
 
