@@ -383,4 +383,4 @@ const Resume = props => {
     </Section>
   )
 }
-// export default Resume
+export default Resume
