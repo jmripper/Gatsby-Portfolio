@@ -177,14 +177,14 @@ const Skills = styled.div`
   }
 `
 
-const SkillsList = styled.ul`
+const SkillsList = styled.div`
   margin: 0;
   font-family: "Raleway", sans-serif;
   list-style: none;
   padding: 10px 0 0 0;
   margin: 0;
 
-  li {
+  p {
     text-align: center;
     font-family: inherit;
     font-size: 16px;
@@ -197,10 +197,6 @@ const SkillsList = styled.ul`
     @media (min-width: 600px) {
       text-align: left;
     }
-  }
-
-  li:first-child {
-    font-weight: 600;
   }
 `
 
@@ -301,8 +297,7 @@ const Resume = props => {
           <Skills>
             <h4>SKILLS</h4>
             <SkillsList>
-              <li>Languages</li>
-              <li>HTML, CSS, Javascript, React.js, GraphQL, Node.js, MongoDB, PostgreSQL, RESTful APIs, Git, SEO, Responsive Design, Google Analyics</li>
+              <p>HTML, CSS, Javascript, React.js, GraphQL, Node.js, MongoDB, PostgreSQL, RESTful APIs, Git, SEO, Responsive Design, Google Analyics</p>
             </SkillsList>
           </Skills>
           <ExperienceContainer>
