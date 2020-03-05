@@ -220,6 +220,9 @@ const EducationContainer = styled.div`
     margin: 0;
     padding: 0 0 15px 0;
     width: 100%;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
   }
 
   @media (min-width: 768px) {
