@@ -193,6 +193,7 @@ const SkillsList = styled.div`
     font-weight: 300;
     text-decoration: none;
     padding-bottom: 5px;
+    margin: 0;
 
     @media (min-width: 600px) {
       text-align: left;
