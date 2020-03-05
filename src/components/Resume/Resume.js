@@ -243,6 +243,9 @@ const Education = styled.div`
     font-size: 16px;
     line-height: 22px;
     font-weight: 300;
+    @media (min-width: 768px) {
+        text-align: left;
+    }
   }
 
   p:nth-child(6n) {
