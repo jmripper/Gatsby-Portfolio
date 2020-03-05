@@ -202,8 +202,9 @@ const SkillsList = styled.ul`
   }
 `
 
-const Education = styled.div`
-  display: block;
+const EducationContainer = styled.div`
+  display: flex;
+  flex-flow: column;
   padding-top: 15px;
   margin: 0;
 
@@ -217,6 +218,14 @@ const Education = styled.div`
     margin: 0;
     padding: 0 0 15px 0;
   }
+
+  @media (min-width: 768px) {
+    flex-flow: wrap;
+  }
+`
+
+const Education = styled.div`
+  display: inline-block;
 
   p {
     margin: 0;
@@ -376,17 +385,21 @@ const Resume = props => {
             </Experience>
           </ExperienceContainer>
         </InnerContainer>
-        <Education>
+        <EducationContainer>
           <h4>EDUCATION</h4>
-          <p>Software Engineering Immersive</p>
-          <p>General Assembly</p>
-          <p>Washington D.C.</p>
-          <p>Nov. 2019 to Feb. 2020</p>
-          <p>Bachelor of Arts</p>
-          <p>Ohio Wesleyan University</p>
-          <p>Delaware, Ohio</p>
-          <p>Aug. 2010 to May 2014</p>
-        </Education>
+          <Education>
+            <p>Software Engineering Immersive</p>
+            <p>General Assembly</p>
+            <p>Washington D.C.</p>
+            <p>Nov. 2019 to Feb. 2020</p>
+          </Education>
+          <Education>
+            <p>Bachelor of Arts</p>
+            <p>Ohio Wesleyan University</p>
+            <p>Delaware, Ohio</p>
+            <p>Aug. 2010 to May 2014</p>
+          </Education>
+        </EducationContainer>
       </ResumeContainer>
     </Section>
   )
