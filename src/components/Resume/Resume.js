@@ -156,6 +156,7 @@ const Skills = styled.div`
   display: flex;
   flex-flow: column;
   @media (min-width: 768px) {
+      flex-flow: wrap;
   }
 
   h4 {
@@ -171,6 +172,7 @@ const Skills = styled.div`
     width: 100%;
     @media (min-width: 768px) {
       text-align: left;
+
     }
   }
 `
@@ -294,23 +296,7 @@ const Resume = props => {
             <h4>SKILLS</h4>
             <SkillsList>
               <li>Languages</li>
-              <li>HTML, CSS, Javascript, Python</li>
-            </SkillsList>
-            <SkillsList>
-              <li>Web Technologies</li>
-              <li>React, Node, Express, SEO, JSON, Git, Gatsby, GraphQL</li>
-            </SkillsList>
-            <SkillsList>
-              <li>Databases</li>
-              <li>MySQL, MongoDB, Mongoose, PostgreSQL</li>
-            </SkillsList>
-            <SkillsList>
-              <li>Design</li>
-              <li>Photoshop, Illustrator, Adobe XD, Dreamweaver</li>
-            </SkillsList>
-            <SkillsList>
-              <li>Data Analysis</li>
-              <li>Google Analytics, Google Tag Manager, Tableau</li>
+              <li>HTML, CSS, Javascript, React.js, GraphQL, Node.js, MongoDB, PostgreSQL, RESTful APIs, Git, SEO, Responsive Design, Google Analyics</li>
             </SkillsList>
           </Skills>
           <ExperienceContainer>
