@@ -88,9 +88,6 @@ const Experience = styled.div`
 const InnerContainer = styled.div`
   display: flex;
   flex-flow: column;
-  @media (min-width: 768px) {
-      flex-flow: row-reverse;
-  }
 `
 
 const Title = styled.p`
@@ -151,7 +148,6 @@ const Skills = styled.div`
   display: flex;
   flex-flow: column;
   @media (min-width: 768px) {
-    width: 35%;
   }
 
   h4 {
@@ -387,4 +383,4 @@ const Resume = props => {
     </Section>
   )
 }
-export default Resume
+// export default Resume
