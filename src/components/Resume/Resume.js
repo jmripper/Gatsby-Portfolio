@@ -96,7 +96,7 @@ const InnerContainer = styled.div`
 const Title = styled.p`
   font-weight: 400;
   margin: 0;
-  padding: 15px 0 0 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   @media (min-width: 768px) {
