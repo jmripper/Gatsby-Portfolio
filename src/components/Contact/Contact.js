@@ -10,7 +10,7 @@ const Section = styled.section`
   font-family: "Raleway", sans-serif;
 
   @media (min-width: 375px) {
-    padding: 70px 20px 30px;
+    padding: 70px 20px 70px;
   }
 
   h2 {

@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import RipperResume from "./Ripper_Resume.pdf"
+import { FaBeer } from 'react-icons/fa';
 
 const Section = styled.section`
   text-align: center;
@@ -290,6 +291,7 @@ const Resume = props => {
         <Name>
           Jennifer Ripper
           <span>Full-Stack Engineer</span>
+          <FaBeer />
         </Name>
         <hr />
         <Bio>

@@ -28,7 +28,7 @@ const GridList = styled.ul`
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  max-width: 1250px;
+  max-width: 950px;
   @media (min-width: 380px) {
     padding: 0 1.5rem;
   }
