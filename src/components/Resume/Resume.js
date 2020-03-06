@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import RipperResume from "./Ripper_Resume.pdf"
-import { FaBeer } from 'react-icons/fa';
+import { FaEnvelope } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
 
 const Section = styled.section`
   text-align: center;
@@ -157,7 +159,7 @@ const Skills = styled.div`
   display: flex;
   flex-flow: column;
   @media (min-width: 768px) {
-      flex-flow: wrap;
+    flex-flow: wrap;
   }
 
   h4 {
@@ -173,7 +175,6 @@ const Skills = styled.div`
     width: 100%;
     @media (min-width: 768px) {
       text-align: left;
-
     }
   }
 `
@@ -219,7 +220,7 @@ const EducationContainer = styled.div`
     padding: 0;
     width: 100%;
     @media (min-width: 768px) {
-        text-align: left;
+      text-align: left;
     }
   }
 
@@ -234,7 +235,7 @@ const Education = styled.div`
   display: inline-block;
   padding-top: 15px;
   @media (min-width: 768px) {
-      padding-right: 80px;
+    padding-right: 80px;
   }
 
   p {
@@ -246,12 +247,8 @@ const Education = styled.div`
     line-height: 22px;
     font-weight: 300;
     @media (min-width: 768px) {
-        text-align: left;
+      text-align: left;
     }
-  }
-
-  p:nth-child(6n) {
-    padding: 15px 0 0 0;
   }
 `
 
@@ -280,6 +277,13 @@ const Download = styled.a`
   }
 `
 
+const LinkIcon = styled.a`
+  padding-right: 10px;
+  &:hover {
+    color: #f4f4f4;
+  }
+`
+
 const Resume = props => {
   return (
     <Section>
@@ -291,7 +295,18 @@ const Resume = props => {
         <Name>
           Jennifer Ripper
           <span>Full-Stack Engineer</span>
-          <FaBeer />
+          <LinkIcon href="mailto:jennifer.ripper@gmail.com" target="_blank">
+            <FaEnvelope />
+          </LinkIcon>
+          <LinkIcon
+            href="https://www.linkedin.com/in/jennifer-ripper/"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </LinkIcon>
+          <LinkIcon href="https://www.github.com/jmripper" target="_blank">
+            <FaGithub />
+          </LinkIcon>
         </Name>
         <hr />
         <Bio>
@@ -304,7 +319,11 @@ const Resume = props => {
           <Skills>
             <h4>SKILLS</h4>
             <SkillsList>
-              <p>HTML, CSS, Javascript, React.js, GraphQL, Node.js, MongoDB, PostgreSQL, RESTful APIs, Git, SEO, Responsive Design, Google Analyics</p>
+              <p>
+                HTML, CSS, Javascript, React.js, GraphQL, Node.js, MongoDB,
+                PostgreSQL, RESTful APIs, Git, SEO, Responsive Design, Google
+                Analyics
+              </p>
             </SkillsList>
           </Skills>
           <ExperienceContainer>
