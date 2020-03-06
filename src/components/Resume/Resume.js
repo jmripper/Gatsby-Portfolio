@@ -224,7 +224,7 @@ const EducationContainer = styled.div`
 
   @media (min-width: 768px) {
     flex-flow: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
   }
 `
@@ -232,6 +232,9 @@ const EducationContainer = styled.div`
 const Education = styled.div`
   display: inline-block;
   padding-top: 15px;
+  @media (min-width: 768px) {
+      padding-right: 80px;
+  }
 
   p {
     margin: 0;
