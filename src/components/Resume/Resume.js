@@ -215,7 +215,7 @@ const EducationContainer = styled.div`
     line-height: 24px;
     text-decoration: underline;
     margin: 0;
-    padding: 0 0 15px 0;
+    padding: 0;
     width: 100%;
     @media (min-width: 768px) {
         text-align: left;
@@ -231,6 +231,7 @@ const EducationContainer = styled.div`
 
 const Education = styled.div`
   display: inline-block;
+  padding-top: 15px;
 
   p {
     margin: 0;
