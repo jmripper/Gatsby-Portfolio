@@ -279,6 +279,7 @@ const Download = styled.a`
 
 const LinkIcon = styled.a`
   padding-right: 10px;
+  color: #000000;
   &:hover {
     color: #f4f4f4;
   }
