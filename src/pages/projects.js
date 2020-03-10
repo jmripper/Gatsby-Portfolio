@@ -42,6 +42,13 @@ export const ProjectsPageImageQuery = graphql`
         }
       }
     }
+    modernTImage: file(relativePath: {eq: "projects/ModernT.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 450, quality: 90, maxHeight: 350) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 

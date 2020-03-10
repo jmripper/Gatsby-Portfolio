@@ -153,7 +153,7 @@ const Projects = props => {
           <GridItem>
             <div>
               <ProjectImage
-                fluid={props.data.triviaImage.childImageSharp.fluid}
+                fluid={props.data.modernTImage.childImageSharp.fluid}
               />
             </div>
             <h3>Modern Trousseau</h3>
