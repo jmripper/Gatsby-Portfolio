@@ -110,6 +110,8 @@ const Projects = props => {
               player get scored on the number of questions they get right. Built
               using HTML, CSS, and Vanilla JS..
             </p>
+            <a href="https://github.com/jmripper/National_Parks_Trivia"
+            target="_blank">Github Repo</a>
           </GridItem>
           <GridItem>
             <div>
@@ -119,7 +121,7 @@ const Projects = props => {
               />
             </div>
             <a
-              href="https://master.d17c6pxzujr60l.amplifyapp.com/"
+              href="https://jmdb.netlify.com/"
               target="_blank"
             >
               <h3>jMDb</h3>
@@ -129,6 +131,8 @@ const Projects = props => {
               update, and delete a movie. Built using MongoDB, Express,
               Mongoose, Node, HTML, CSS, and React.
             </p>
+            <a href="https://github.com/jmripper/jMDb"
+            target="_blank">Github Repo</a>
           </GridItem>
           <GridItem>
             <div>
@@ -145,6 +149,8 @@ const Projects = props => {
               will reset once the reset button is clicked. Built using: Vanilla
               Javascript, HTML, & CSS.
             </p>
+            <a href="https://github.com/jmripper/tic-tac-toe"
+            target="_blank">Github Repo</a>
           </GridItem>
           <GridItem>
             <div>
@@ -157,6 +163,8 @@ const Projects = props => {
               An interactive trivia game on the national parks built using HTML,
               CSS, and Vanilla JS.
             </p>
+            <a href="https://github.com/jserrao/modern-trousseau-gatsby"
+            target="_blank">Github Repo</a>
           </GridItem>
         </GridList>
       </Container>
