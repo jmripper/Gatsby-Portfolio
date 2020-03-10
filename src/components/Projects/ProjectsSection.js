@@ -86,6 +86,7 @@ const ProjectImage = styled(Img)`
   }
 `
 
+
 const Projects = props => {
   return (
     <Section>
@@ -108,10 +109,9 @@ const Projects = props => {
             <p>
               An interactive trivia game on the national parks built where a
               player get scored on the number of questions they get right. Built
-              using HTML, CSS, and Vanilla JS..
+              using HTML, CSS, and Vanilla JS. <a href="https://github.com/jmripper/National_Parks_Trivia"
+            target="_blank">Repo</a>
             </p>
-            <a href="https://github.com/jmripper/National_Parks_Trivia"
-            target="_blank">Github Repo</a>
           </GridItem>
           <GridItem>
             <div>
@@ -129,10 +129,9 @@ const Projects = props => {
             <p>
               jMDb is a full-stack MERN application where one can view, add,
               update, and delete a movie. Built using MongoDB, Express,
-              Mongoose, Node, HTML, CSS, and React.
+              Mongoose, Node, HTML, CSS, and React. <a href="https://github.com/jmripper/jMDb"
+            target="_blank">Repo</a>
             </p>
-            <a href="https://github.com/jmripper/jMDb"
-            target="_blank">Github Repo</a>
           </GridItem>
           <GridItem>
             <div>
@@ -147,10 +146,9 @@ const Projects = props => {
             <p>
               A user can play a game of Tic Tac Toe with the computer. The game
               will reset once the reset button is clicked. Built using: Vanilla
-              Javascript, HTML, & CSS.
+              Javascript, HTML, & CSS. <a href="https://github.com/jmripper/tic-tac-toe"
+            target="_blank">Repo</a>
             </p>
-            <a href="https://github.com/jmripper/tic-tac-toe"
-            target="_blank">Github Repo</a>
           </GridItem>
           <GridItem>
             <div>
@@ -158,13 +156,11 @@ const Projects = props => {
                 fluid={props.data.triviaImage.childImageSharp.fluid}
               />
             </div>
-            <h3>Modern T</h3>
+            <h3>Modern Trousseau</h3>
             <p>
-              An interactive trivia game on the national parks built using HTML,
-              CSS, and Vanilla JS.
+              A JAMstack client wedding gown website built using Gatsby, React, Node, Styled Components, and Contentful CMS.  <a href="https://github.com/jserrao/modern-trousseau-gatsby"
+            target="_blank">Repo</a>
             </p>
-            <a href="https://github.com/jserrao/modern-trousseau-gatsby"
-            target="_blank">Github Repo</a>
           </GridItem>
         </GridList>
       </Container>
