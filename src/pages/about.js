@@ -14,6 +14,7 @@ const AboutPage = props => {
         <SEO title="About" />
         <Me data={props.data} />
         <About data={props.data} />
+        <Photos data={props.data} />
         <Tech />
       </Layout>
     </>
@@ -27,6 +28,13 @@ export const AboutPageImageQuery = graphql`
     headShot: file(relativePath: {eq: "about/HeadShot.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 400, quality: 90) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    amsterdamImg: file(relativePath: {eq: "about/HeadShot.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
