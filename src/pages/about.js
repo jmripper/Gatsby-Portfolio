@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import Me from "../components/About/Me"
 import About from "../components/About/About"
 import Tech from "../components/About/Tech"
+import Photos from "../components/About/Photos"
 
 const AboutPage = props => {
   return (
@@ -32,7 +33,7 @@ export const AboutPageImageQuery = graphql`
         }
       }
     }
-    amsterdamImg: file(relativePath: {eq: "about/HeadShot.jpg"}) {
+    amsterdamImg: file(relativePath: {eq: "about/Amersterdam.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid
