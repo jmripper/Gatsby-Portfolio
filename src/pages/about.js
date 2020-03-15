@@ -33,7 +33,7 @@ export const AboutPageImageQuery = graphql`
         }
       }
     }
-    amsterdamImg: file(relativePath: {eq: "about/Amersterdam.jpg"}) {
+    amsterdamImg: file(relativePath: {eq: "about/Amsterdam.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid
