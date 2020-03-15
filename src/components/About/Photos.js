@@ -9,7 +9,11 @@ const Section = styled.section`
   width: 100%;
   position: relative;
   display: flex;
-  flex-flow: row;
+  flex-flow: wrap;
+
+  @media (min-width: 768px) {
+      flex-flow: row;
+  }
 `
 const Photo = styled(Img)`
   height: 280px;
@@ -23,14 +27,17 @@ const PhotoSection = props => {
       <Photo
         fluid={props.data.amsterdamImg.childImageSharp.fluid}
         role="image"
+        alt={"Amsterdam 2017 by Jenny Ripper"}
       />
       <Photo
         fluid={props.data.familyImg.childImageSharp.fluid}
         role="image"
+        alt={"Family Photo 2019"}
       />
       <Photo
         fluid={props.data.footballImg.childImageSharp.fluid}
         role="image"
+        alt={"Ohio State Football 2019 by Jenny Ripper"}
       />
     </Section>
   )
