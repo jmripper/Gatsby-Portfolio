@@ -32,7 +32,7 @@ const Tech = props => {
         <span>Editor:</span> VS Code
       </p>
       <p>
-        <span>Front-End:</span> HTML, CSS, React, JS ES6, RESTful APIs, GraphQL
+        <span>Front-End:</span> HTML, CSS, React, Javascript ES6, RESTful APIs, GraphQL
       </p>
       <p>
         <span>Backend:</span> MySQL, MongoDB, Node.js, Python, Django, Express,
