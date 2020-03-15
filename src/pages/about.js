@@ -28,7 +28,7 @@ export const AboutPageImageQuery = graphql`
   query {
     headShot: file(relativePath: {eq: "about/HeadShot.jpg"}) {
       childImageSharp {
-        fluid(maxWidth: 400, quality: 90) {
+        fluid(maxWidth: 400, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -41,6 +41,13 @@ export const AboutPageImageQuery = graphql`
       }
     }
     familyImg: file(relativePath: {eq: "about/Family.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    footballImg: file(relativePath: {eq: "about/Football.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 600, quality: 100) {
           ...GatsbyImageSharpFluid

@@ -8,6 +8,8 @@ const Section = styled.section`
   padding: 0;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-flow: row;
 `
 const Photo = styled(Img)`
   height: 280px;
@@ -24,6 +26,10 @@ const PhotoSection = props => {
       />
       <Photo
         fluid={props.data.familyImg.childImageSharp.fluid}
+        role="image"
+      />
+      <Photo
+        fluid={props.data.footballImg.childImageSharp.fluid}
         role="image"
       />
     </Section>
