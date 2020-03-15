@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Section = styled.section`
   text-align: center;
   background-color: #ffffff;
-  padding: 0 20px;
+  padding: 0;
   width: 100%;
   position: relative;
 `
