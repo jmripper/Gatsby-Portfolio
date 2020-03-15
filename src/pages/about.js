@@ -40,6 +40,13 @@ export const AboutPageImageQuery = graphql`
         }
       }
     }
+    familyImg: file(relativePath: {eq: "about/Family.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 600, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 

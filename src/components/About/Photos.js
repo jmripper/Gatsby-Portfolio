@@ -22,6 +22,10 @@ const PhotoSection = props => {
         fluid={props.data.amsterdamImg.childImageSharp.fluid}
         role="image"
       />
+      <Photo
+        fluid={props.data.familyImg.childImageSharp.fluid}
+        role="image"
+      />
     </Section>
   )
 }
