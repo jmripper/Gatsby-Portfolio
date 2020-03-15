@@ -11,7 +11,7 @@ const Section = styled.section`
 `
 const Photo = styled(Img)`
   height: 280px;
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
 `
 
