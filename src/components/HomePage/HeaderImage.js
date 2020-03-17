@@ -70,7 +70,7 @@ const Title = styled.h2`
   }
 `
 const SubTitle = styled.h3`
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: #ffffff;
   z-index: 5;
