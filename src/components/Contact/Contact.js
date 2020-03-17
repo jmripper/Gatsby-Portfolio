@@ -7,7 +7,7 @@ const Section = styled.section`
   padding: 70px 0 30px;
   width: 100%;
   position: relative;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Abril Fatface', cursive;
 
   @media (min-width: 375px) {
     padding: 70px 20px 70px;
