@@ -22,7 +22,7 @@ const Section = styled.section`
   }
 
   p {
-    font-family: inherit;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     text-align: center;
     line-height: 22px;
