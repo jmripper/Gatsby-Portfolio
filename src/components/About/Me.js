@@ -44,6 +44,7 @@ const Me = props => {
       <HeadShot
         fluid={props.data.headShot.childImageSharp.fluid}
         role="image"
+        alt={"Head Shot - 2020 - Jenny Ripper"}
       />
       <Subheading>
         Hey Again, I'm Jenny{" "}

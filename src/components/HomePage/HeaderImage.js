@@ -59,7 +59,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h2`
-  font-family: "Raleway", sans-serif;
+  font-family: 'Abril Fatface', cursive;;
   font-weight: 500;
   color: #ffffff;
   z-index: 5;
@@ -70,7 +70,7 @@ const Title = styled.h2`
   }
 `
 const SubTitle = styled.h3`
-  font-family: "Raleway", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #ffffff;
   z-index: 5;
