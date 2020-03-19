@@ -1,8 +1,8 @@
 var proxy = require("http-proxy-middleware")
 module.exports = {
   siteMetadata: {
-    title: `Jenny Lothstein | Portfolio`,
-    description: `Hi, My name is Jenny Lothstein. I'm a former digital marketer turned Full-Stack Engineer. Let's get to know each other.`,
+    title: `Jenny Ripper | Portfolio`,
+    description: `Hi, My name is Jenny Ripper. I'm a former digital marketer turned Full-Stack Engineer. Let's get to know each other.`,
     author: ``,
   },
   developMiddleware: app => {
