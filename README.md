@@ -1,7 +1,10 @@
 
-My Portfolio
+# My Portfolio
 
-
+### Technologies Used:
+- Gatsby
+- React
+- Netlify
 
 ## 💫 Deploy
 
