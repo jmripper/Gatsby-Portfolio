@@ -21,11 +21,17 @@ const Section = styled.section`
     font-size: 20px;
     line-height: 28px;
   }
+
+  hr {
+    margin: 1.5em auto;
+    border: .5px solid #000000;
+    width: 60%;
+  }
 `
 
 const Bold = styled.span`
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 28px;
   margin: 0;
@@ -58,7 +64,7 @@ const Tech = props => {
       </p>
     <hr />
       <p>
-        <Bold>What I'm Learning</Bold>
+        <Bold>What I'm Learning:</Bold>
         Angular & Typescript
       </p>
     </Section>

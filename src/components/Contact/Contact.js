@@ -25,8 +25,8 @@ const Section = styled.section`
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     text-align: center;
-    line-height: 22px;
-    font-size: 16px;
+    line-height: 28px;
+    font-size: 20px;
     padding: 0 15px 20px;
     margin: 0;
   }
