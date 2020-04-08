@@ -28,9 +28,10 @@ const Section = styled.section`
 
 const Bold = styled.h4`
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  margin: 0;
 `
 
 const Tech = props => {
@@ -41,13 +42,14 @@ const Tech = props => {
       <p>VS Code</p>
       <Bold>Front-End:</Bold>
       <p>HTML, CSS, React, Javascript ES6, RESTful APIs, GraphQL</p>
+      <Bold>Backend:</Bold>
       <p>
-        <span>Backend:</span> MySQL, MongoDB, Node.js, Python, Django, Express,
-        Mongoose, PostgreSQL
+        MySQL, MongoDB, Node.js, Python, Django, Express, Mongoose, PostgreSQL
       </p>
-      <p>
-        <span>Adobe Creative Suite:</span>Adobe XD, Photoshop, Illustrator
-      </p>
+      <Bold>Adobe Creative Cloud:</Bold>
+      <p>Adobe XD, Photoshop, Illustrator</p>
+      <Bold>Data Analysis:</Bold>
+      <p>Tableau, Google Analytics</p>
     </Section>
   )
 }

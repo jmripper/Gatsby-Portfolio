@@ -28,9 +28,6 @@ const Section = styled.section`
     width: 100%;
     border: none;
   }
-
-  a {
-  }
 `
 const ResumeContainer = styled.div`
   display: flex;
