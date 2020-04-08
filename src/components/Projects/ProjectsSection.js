@@ -12,7 +12,7 @@ const Container = styled.div`
   padding: 2rem 0;
 
   h2 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Abril Fatface", cursive;
     font-weight: 400;
     margin: 0 auto 1em;
     text-align: center;
@@ -85,7 +85,6 @@ const ProjectImage = styled(Img)`
   }
 `
 
-
 const Projects = props => {
   return (
     <Section>
@@ -108,8 +107,13 @@ const Projects = props => {
             <p>
               An interactive trivia game on the national parks built where a
               player get scored on the number of questions they get right. Built
-              using HTML, CSS, and Vanilla JS. <a href="https://github.com/jmripper/National_Parks_Trivia"
-            target="_blank">Repo</a>
+              using HTML, CSS, and Vanilla JS.{" "}
+              <a
+                href="https://github.com/jmripper/National_Parks_Trivia"
+                target="_blank"
+              >
+                Repo
+              </a>
             </p>
           </GridItem>
           <GridItem>
@@ -119,17 +123,16 @@ const Projects = props => {
                 alt="jMdB Screenshot"
               />
             </div>
-            <a
-              href="https://jmdb.netlify.com/"
-              target="_blank"
-            >
+            <a href="https://jmdb.netlify.com/" target="_blank">
               <h3>jMDb</h3>
             </a>
             <p>
               jMDb is a full-stack MERN application where one can view, add,
               update, and delete a movie. Built using MongoDB, Express,
-              Mongoose, Node, HTML, CSS, and React. <a href="https://github.com/jmripper/jMDb"
-            target="_blank">Repo</a>
+              Mongoose, Node, HTML, CSS, and React.{" "}
+              <a href="https://github.com/jmripper/jMDb" target="_blank">
+                Repo
+              </a>
             </p>
           </GridItem>
           <GridItem>
@@ -140,13 +143,15 @@ const Projects = props => {
               />
             </div>
             <a href="https://jmripper.github.io/tic-tac-toe/" target="_blank">
-            <h3>Tic-Tac-Toe</h3>
+              <h3>Tic-Tac-Toe</h3>
             </a>
             <p>
               A user can play a game of Tic Tac Toe with the computer. The game
               will reset once the reset button is clicked. Built using: Vanilla
-              Javascript, HTML, & CSS. <a href="https://github.com/jmripper/tic-tac-toe"
-            target="_blank">Repo</a>
+              Javascript, HTML, & CSS.{" "}
+              <a href="https://github.com/jmripper/tic-tac-toe" target="_blank">
+                Repo
+              </a>
             </p>
           </GridItem>
           <GridItem>
@@ -157,8 +162,35 @@ const Projects = props => {
             </div>
             <h3>Modern Trousseau</h3>
             <p>
-              A JAMstack client wedding gown website built using Gatsby, React, Node, Styled Components, Storybook and Contentful CMS.  <a href="https://github.com/jserrao/modern-trousseau-gatsby"
-            target="_blank">Repo</a>
+              A JAMstack client wedding gown website built using Gatsby, React,
+              Node, Styled Components, Storybook and Contentful CMS.{" "}
+              <a
+                href="https://github.com/jserrao/modern-trousseau-gatsby"
+                target="_blank"
+              >
+                Repo
+              </a>
+            </p>
+          </GridItem>
+          <GridItem>
+            <div>
+              <ProjectImage
+                fluid={props.data.modernTImage.childImageSharp.fluid}
+              />
+            </div>
+            <a href="https://covid19tracker-app.netlify.com/" target="_blank">
+              <h3>Covid-19 Country Tracker</h3>
+            </a>
+            <p>
+              A page built with React, Axios, Styled Components, and Chart.js to
+              show the number of infected, recovered, and dealths by country of
+              Covid-19 pandemic.{" "}
+              <a
+                href="https://github.com/jmripper/covid19-tracker"
+                target="_blank"
+              >
+                Repo
+              </a>
             </p>
           </GridItem>
         </GridList>
