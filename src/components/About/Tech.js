@@ -65,7 +65,7 @@ const Tech = props => {
     <hr />
       <p>
         <Bold>What I'm Learning:</Bold>
-        Angular & Typescript
+        Angular & Typescript & Java
       </p>
     </Section>
   )
