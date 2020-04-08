@@ -12,7 +12,7 @@ const Section = styled.section`
   width: 100%;
   position: relative;
 
-  h2 {
+  h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: 400;
     color: #000000;
@@ -47,7 +47,7 @@ const Name = styled.h2`
   font-weight: 400;
   font-size: 2rem;
   color: #000000;
-  margin: 0;
+  margin: 0 !important;
   padding: 0;
 
   span {
@@ -285,7 +285,7 @@ const LinkIcon = styled.a`
 const Resume = props => {
   return (
     <Section>
-      <h2>Resume:</h2>
+      <h1>Resume:</h1>
       <Download href={RipperResume} download>
         Download
       </Download>
