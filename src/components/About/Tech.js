@@ -20,9 +20,7 @@ const Section = styled.section`
     margin: 0.5em 0;
     font-size: 20px;
     line-height: 28px;
-  }
-  span {
-    font-weight: 500;
+    display: inline-block;
   }
 `
 
@@ -32,6 +30,8 @@ const Bold = styled.h4`
   font-size: 20px;
   line-height: 28px;
   margin: 0;
+  display: inline-block;
+  padding-right: 10px;
 `
 
 const Tech = props => {
@@ -50,6 +50,9 @@ const Tech = props => {
       <p>Adobe XD, Photoshop, Illustrator</p>
       <Bold>Data Analysis:</Bold>
       <p>Tableau, Google Analytics</p>
+
+      <h2>What I'm Learning</h2>
+      <p>Angular & Typescript</p>
     </Section>
   )
 }
