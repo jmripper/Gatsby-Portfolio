@@ -18,16 +18,18 @@ const Section = styled.section`
   p {
     font-family: "Raleway", sans-serif;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 28px;
     max-width: 800px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
   }
 `
 
 const Subheading = styled.h3`
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
 `
 
 const HeadShot = styled(Img)`

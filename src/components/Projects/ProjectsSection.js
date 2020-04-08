@@ -157,7 +157,7 @@ const Projects = props => {
             </div>
             <h3>Modern Trousseau</h3>
             <p>
-              A JAMstack client wedding gown website built using Gatsby, React, Node, Styled Components, and Contentful CMS.  <a href="https://github.com/jserrao/modern-trousseau-gatsby"
+              A JAMstack client wedding gown website built using Gatsby, React, Node, Styled Components, Storybook and Contentful CMS.  <a href="https://github.com/jserrao/modern-trousseau-gatsby"
             target="_blank">Repo</a>
             </p>
           </GridItem>
