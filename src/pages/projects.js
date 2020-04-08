@@ -49,6 +49,13 @@ export const ProjectsPageImageQuery = graphql`
         }
       }
     }
+    covidImage: file(relativePath: {eq: "projects/Covid19-Tracker.png"}) {
+      childImageSharp {
+        fluid(maxWidth: 450, quality: 100, maxHeight: 350) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
   }
 `
 

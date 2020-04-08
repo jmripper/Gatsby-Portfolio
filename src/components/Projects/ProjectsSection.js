@@ -175,7 +175,7 @@ const Projects = props => {
           <GridItem>
             <div>
               <ProjectImage
-                fluid={props.data.modernTImage.childImageSharp.fluid}
+                fluid={props.data.covidImage.childImageSharp.fluid}
               />
             </div>
             <a href="https://covid19tracker-app.netlify.com/" target="_blank">
