@@ -46,11 +46,11 @@ const About = props => {
     <Section>
       <Subheading>When I'm Not Coding, You Can Find Me</Subheading>
       <List>
-        <li>Hanging with husband (married Feb. 2020) and our dog Maple</li>
-        <li>Traveling - Most recently to Brazil in Sept. 2019 & Hawaii fall 2020</li>
-        <li>Hiking around the DMV</li>
-        <li>Watching Ohio State football. O-H!</li>
-        <li>Working on DIY projects</li>
+        <li>- Hanging with husband (married Feb. 2020) and our dog Maple</li>
+        <li>- Traveling - Most recently to Brazil in Sept. 2019 & Hawaii fall 2020</li>
+        <li>- Hiking around the DMV</li>
+        <li>- Watching Ohio State football. O-H!</li>
+        <li>- Working on DIY projects</li>
       </List>
     </Section>
   )

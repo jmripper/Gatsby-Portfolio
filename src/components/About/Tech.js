@@ -20,17 +20,15 @@ const Section = styled.section`
     margin: 0.5em 0;
     font-size: 20px;
     line-height: 28px;
-    display: inline-block;
   }
 `
 
-const Bold = styled.h4`
+const Bold = styled.span`
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   margin: 0;
-  display: inline-block;
   padding-right: 10px;
 `
 
@@ -38,21 +36,31 @@ const Tech = props => {
   return (
     <Section>
       <h2>Tech Stack</h2>
-      <Bold>Editor:</Bold>
-      <p>VS Code</p>
-      <Bold>Front-End:</Bold>
-      <p>HTML, CSS, React, Javascript ES6, RESTful APIs, GraphQL</p>
-      <Bold>Backend:</Bold>
       <p>
+        <Bold>Editor:</Bold>
+        VS Code
+      </p>
+      <p>
+        <Bold>Front-End:</Bold>
+        HTML, CSS, React, Javascript ES6, RESTful APIs, GraphQL
+      </p>
+      <p>
+        <Bold>Backend:</Bold>
         MySQL, MongoDB, Node.js, Python, Django, Express, Mongoose, PostgreSQL
       </p>
-      <Bold>Adobe Creative Cloud:</Bold>
-      <p>Adobe XD, Photoshop, Illustrator</p>
-      <Bold>Data Analysis:</Bold>
-      <p>Tableau, Google Analytics</p>
+      <p>
+        <Bold>Adobe Creative Cloud:</Bold>
+        Adobe XD, Photoshop, Illustrator
+      </p>
+      <p>
+        <Bold>Data Analysis:</Bold>
+        Tableau, Google Analytics
+      </p>
 
-      <h2>What I'm Learning</h2>
-      <p>Angular & Typescript</p>
+      <p>
+        <Bold>What I'm Learning</Bold>
+        Angular & Typescript
+      </p>
     </Section>
   )
 }
