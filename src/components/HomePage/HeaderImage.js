@@ -59,7 +59,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h2`
-  font-family: 'Abril Fatface', cursive;;
+  font-family: 'Abril Fatface', cursive;
   font-weight: 500;
   color: #ffffff;
   z-index: 5;
