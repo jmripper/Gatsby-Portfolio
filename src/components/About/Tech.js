@@ -56,7 +56,7 @@ const Tech = props => {
         <Bold>Data Analysis:</Bold>
         Tableau, Google Analytics
       </p>
-
+    <hr />
       <p>
         <Bold>What I'm Learning</Bold>
         Angular & Typescript

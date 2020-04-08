@@ -90,7 +90,7 @@ const Projects = props => {
   return (
     <Section>
       <Container>
-        <h2>Projects</h2>
+        <h2>Projects:</h2>
         <GridList>
           <GridItem>
             <div>
