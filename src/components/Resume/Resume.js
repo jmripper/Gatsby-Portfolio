@@ -13,7 +13,7 @@ const Section = styled.section`
   position: relative;
 
   h2 {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 400;
     color: #000000;
     text-align: center;
