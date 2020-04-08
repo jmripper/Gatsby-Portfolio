@@ -13,7 +13,7 @@ const Section = styled.section`
     font-weight: 400;
     margin: 1em auto;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5rem;
   }
   p {
     font-family: "Raleway", sans-serif;

@@ -15,7 +15,7 @@ const Section = styled.section`
 
   h2 {
     font-family: inherit;
-    font-size: 2em;
+    font-size: 2.5rem;
     margin: 1em auto;
     font-weight: 400;
     text-align: center;

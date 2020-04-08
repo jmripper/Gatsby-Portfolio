@@ -100,7 +100,7 @@ const HeaderImage = props => {
       <Box>
         <Container>
           <Title>Aloha, I'm Jenny</Title>
-          <SubTitle>I'm a digital marketer turned developer.</SubTitle>
+          <SubTitle>I'm a digital marketer turned fullstack developer.</SubTitle>
         </Container>
       </Box>
     </Wrapper>

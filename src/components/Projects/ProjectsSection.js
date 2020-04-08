@@ -12,7 +12,7 @@ const Container = styled.div`
   padding: 2rem 0;
 
   h2 {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Abril Fatface', cursive;
     font-weight: 400;
     margin: 0 auto 1em;
     text-align: center;
